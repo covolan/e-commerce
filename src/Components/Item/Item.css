@@ -1,0 +1,29 @@
+.itemDiv {
+    max-width: 276px;
+    padding: 10px;
+    margin: 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+    img {
+        max-width: 256px;
+        border-radius: 16px;
+    }
+    &:hover {
+        scale: 102%;
+    }
+}
+
+.itemDiv-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    h2 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 18px;
+    }
+}

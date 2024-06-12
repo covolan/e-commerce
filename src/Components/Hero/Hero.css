@@ -1,0 +1,54 @@
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #e2e2e2;
+    padding: 64px 36px;
+
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 640px;
+    padding-right: 36px;
+    margin-left: auto;
+
+    p {
+        max-width: 400px;
+        font-size: 18px;
+        margin: 24px 0 48px;
+    }
+
+    button {
+        width: fit-content;
+        padding: 12px 36px;
+        font-weight: 600;
+        border: none;
+        background-color: #373737;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.4s ease;
+
+        &:hover {
+            background-color: #707070;
+        }
+    }
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    max-width: 640px;
+    padding-left: 64px;
+}
+
+.hero-right-imagePlaceholder {
+    background-color: #585858;
+    height: 300px;
+    width: 300px;
+    border-radius: 16px;
+}
