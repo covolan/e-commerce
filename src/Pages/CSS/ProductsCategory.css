@@ -1,0 +1,21 @@
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px;
+  padding: 16px 0;
+  button {
+    padding: 8px 28px;
+    border: 1px solid hsl(0, 0%, 25%);
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: hsl(0, 0%, 80%);
+    }
+  }
+  p {
+    font-weight: 600;
+  }
+}

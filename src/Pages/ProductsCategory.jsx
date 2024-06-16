@@ -1,11 +1,32 @@
-import React from 'react'
+import React, { useContext } from "react";
+import "./CSS/ProductsCategory.css";
+import { ShopContext } from "../Context/ShopContext";
+import Item from "../Components/Item/Item";
 
-function ProductsCategory() {
+function ProductsCategory(props) {
+  const { productData } = useContext(ShopContext);
+
   return (
-    <div>
-      
+    <div className="category">
+      <div className="category-header">
+        <p>Showing n out of N products</p>
+        <button>Sort by</button>
+      </div>
+      {productData.map((item, index) => {
+        if (props.category == item.category) {
+          return (
+            <Item
+              key={index}
+              image={item.image}
+              productName={item.productName}
+              price={item.price}
+            />
+          );
+        }
+        return null;
+      })}
     </div>
-  )
+  );
 }
 
-export default ProductsCategory
+export default ProductsCategory;
