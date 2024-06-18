@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import cartIcon from "../assets/cart-shopping.png";
 import { Link } from "react-router-dom";
+import { MenuContext } from "../../Context/MenuContext";
+
 
 function Navbar() {
-  const [selectedMenu, setSelectedMenu] = useState("products");
-
-  const linkStyle = {
-    textDecoration: "none",
-  };
+  const [selectedMenu, setSelectedMenu] = useContext(MenuContext);
 
   return (
     <div className="navbar">
@@ -17,7 +15,7 @@ function Navbar() {
         <MenuItem
           selectedMenu={selectedMenu}
           setSelectedMenu={setSelectedMenu}
-          optionName={"products"}
+          optionName={"home"}
           path={"/"}
         />
         <MenuItem
@@ -32,25 +30,17 @@ function Navbar() {
           optionName={"office"}
           path={"/office"}
         />
-        <MenuItem
-          selectedMenu={selectedMenu}
-          setSelectedMenu={setSelectedMenu}
-          optionName={"home"}
-          path={"/home"}
-        />
       </ul>
       <div className="navbar-loginAndCart">
-        <button>
-          <Link
-            onClick={() => {
-              setSelectedMenu("");
-            }}
-            style={{ textDecoration: "inherit", color: "inherit" }}
-            to="/login"
-          >
-            Login
-          </Link>
-        </button>
+        <Link
+          onClick={() => {
+            setSelectedMenu("");
+          }}
+          style={{ textDecoration: "inherit", color: "inherit" }}
+          to="/login"
+        >
+          <button>Login</button>
+        </Link>
         <Link
           onClick={() => {
             setSelectedMenu("");
@@ -67,16 +57,16 @@ function Navbar() {
 
 function MenuItem({ selectedMenu, setSelectedMenu, optionName, path }) {
   return (
-    <li
-      className={selectedMenu == optionName ? "selected-border-bottom" : ""}
-      onClick={() => {
-        setSelectedMenu(optionName);
-      }}
-    >
-      <Link style={{ textDecoration: "inherit", color: "inherit" }} to={path}>
+    <Link style={{ textDecoration: "inherit", color: "inherit" }} to={path}>
+      <li
+        className={selectedMenu == optionName ? "selected-border-bottom" : ""}
+        onClick={() => {
+          setSelectedMenu(optionName);
+        }}
+      >
         {optionName.charAt(0).toUpperCase() + optionName.slice(1)}
-      </Link>
-    </li>
+      </li>
+    </Link>
   );
 }
 

@@ -3,7 +3,7 @@ import productData from "../Components/assets/data";
 
 export const ShopContext = createContext(null);
 
-const ShopContextProvider = (props) => {
+function ShopContextProvider (props) {
   const contextValue = { productData };
   return (
     <ShopContext.Provider value={contextValue}>

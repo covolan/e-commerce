@@ -3,12 +3,12 @@
     padding: 10px;
     margin: 12px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 16px;
+    border-radius: 10px;
     cursor: pointer;
     transition: scale 0.2s ease;
     img {
         max-width: 256px;
-        border-radius: 16px;
+        border-radius: 8px;
     }
     &:hover {
         scale: 102%;
