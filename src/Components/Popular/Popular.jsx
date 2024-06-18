@@ -12,6 +12,7 @@ function Popular() {
         {productData.map((product, index) => {
           return (
             <Item
+              id={product.id}
               key={index}
               image={product.image}
               productName={product.productName}

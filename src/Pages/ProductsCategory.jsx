@@ -5,7 +5,6 @@ import Item from "../Components/Item/Item";
 
 function ProductsCategory(props) {
   const { productData } = useContext(ShopContext);
-
   return (
     <div className="category">
       <div className="category-header">
@@ -17,6 +16,7 @@ function ProductsCategory(props) {
           return (
             <Item
               key={index}
+              id={item.id}
               image={item.image}
               productName={item.productName}
               price={item.price}
