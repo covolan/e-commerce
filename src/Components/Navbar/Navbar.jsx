@@ -2,28 +2,34 @@ import "./Navbar.css";
 import { NavbarMenuItem } from "./NavbarMenu";
 
 function Navbar() {
+  const menuOptions = [
+    {
+      path: "/",
+      optionName: "home",
+    },
+    {
+      path: "/gaming",
+      optionName: "gaming",
+    },
+    {
+      path: "/office",
+      optionName: "office",
+    },
+  ];
 
   return (
     <div className="navbar">
       <p className="navbar-shopName">INFORMATIKA</p>
       <ul className="navbar-menu">
-        <NavbarMenuItem.Root>
-          <NavbarMenuItem.Link path={"/"}>
-            <NavbarMenuItem.Li optionName={"home"} />
-          </NavbarMenuItem.Link>
-        </NavbarMenuItem.Root>
-
-        <NavbarMenuItem.Root>
-          <NavbarMenuItem.Link path={"/gaming"}>
-            <NavbarMenuItem.Li optionName={"gaming"} />
-          </NavbarMenuItem.Link>
-        </NavbarMenuItem.Root>
-
-        <NavbarMenuItem.Root>
-          <NavbarMenuItem.Link path={"/office"}>
-            <NavbarMenuItem.Li optionName={"office"} />
-          </NavbarMenuItem.Link>
-        </NavbarMenuItem.Root>
+        {menuOptions.map((option, index) => {
+          return (
+            <NavbarMenuItem.Root key={index + option.optionName}>
+              <NavbarMenuItem.Link path={option.path}>
+                <NavbarMenuItem.Li optionName={option.optionName} />
+              </NavbarMenuItem.Link>
+            </NavbarMenuItem.Root>
+          );
+        })}
       </ul>
       <div className="navbar-loginAndCart">
         <NavbarMenuItem.Root>
