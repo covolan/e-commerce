@@ -5,7 +5,7 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <p className="navbar-shopName">Shop-name</p>
+      <p className="navbar-shopName">INFORMATIKA</p>
       <ul className="navbar-menu">
         <NavbarMenuItem.Root>
           <NavbarMenuItem.Link path={"/"}>

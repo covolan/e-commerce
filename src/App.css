@@ -15,6 +15,8 @@
 }
 
 :root {
+  --black: black;
+  --white: white;
   --bluebonnet: #2a2aef;
   --bluebonnet-tints-20: #5454f2;
   --bluebonnet-tints-40: #7f7ff5;
