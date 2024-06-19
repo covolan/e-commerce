@@ -8,6 +8,7 @@ import { MenuContext } from "../../Context/MenuContext";
 function Navbar() {
   const [selectedMenu, setSelectedMenu] = useContext(MenuContext);
 
+
   return (
     <div className="navbar">
       <p className="navbar-shopName">Shop-name</p>

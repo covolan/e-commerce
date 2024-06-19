@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./ProductDisplay.css";
+import { ShopContext } from "../../Context/ShopContext";
 
 function ProductDisplay(props) {
   const { product } = props;
+  const { addToCart } = useContext(ShopContext);
 
   return (
     <div className="productDisplay">
@@ -27,7 +29,7 @@ function ProductDisplay(props) {
           voluptate reiciendis, pariatur eveniet non fugiat nihil provident
           fugit qui soluta.
         </p>
-        <button className="productDisplay-cartBtn">ADD TO CART</button>
+        <button onClick={() => {addToCart(product.id)}} className="productDisplay-cartBtn">ADD TO CART</button>
       </div>
     </div>
   );
