@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -6,6 +8,7 @@
 }
 
 .navbar-shopName {
+    font-family: "Bebas Neue", sans-serif;
     place-content: center;
     font-size: 1.2em;
 }
