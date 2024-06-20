@@ -1,8 +1,8 @@
 import React from 'react'
-import Hero from '../Components/Hero/Hero'
+import Hero from '../Components/Hero/HeroHome'
 import Popular from '../Components/Popular/Popular'
 
-function Products() {
+function Home() {
   return (
     <div>
       <Hero />
@@ -11,4 +11,4 @@ function Products() {
   )
 }
 
-export default Products
+export default Home
