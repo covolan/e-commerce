@@ -19,6 +19,8 @@ function Navbar() {
 
   return (
     <div className="navbar">
+      <div className="navbar-content">
+
       <p className="navbar-shopName">INFORMATIKA</p>
       <ul className="navbar-menu">
         {menuOptions.map((option, index) => {
@@ -43,6 +45,7 @@ function Navbar() {
             <NavbarMenuItem.Cart />
           </NavbarMenuItem.Link>
         </NavbarMenuItem.Root>
+      </div>
       </div>
     </div>
   );
