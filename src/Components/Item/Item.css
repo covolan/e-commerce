@@ -1,14 +1,13 @@
 .itemDiv {
-    max-width: 276px;
-    padding: 10px;
+    max-width: 256px;
     margin: 12px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     transition: scale 0.2s ease;
     img {
         max-width: 256px;
-        border-radius: 8px;
+        border-radius: 8px 8px 0 0;
     }
     &:hover {
         scale: 102%;
@@ -19,11 +18,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
+    padding: 12px 18px 18px;
     h2 {
         font-size: 18px;
     }
-    p {
-        font-size: 18px;
-    }
+}
+
+.description-price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.current-price {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.previous-price {
+    font-size: 16px;
+    color: hsl(0, 0%, 30%);
+    text-decoration: line-through;
 }

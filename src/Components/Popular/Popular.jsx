@@ -17,6 +17,7 @@ function Popular() {
               image={product.image}
               productName={product.productName}
               price={product.price}
+              prevPrice={product.prevPrice}
             />
           );
         })}

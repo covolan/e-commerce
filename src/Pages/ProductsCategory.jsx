@@ -20,6 +20,7 @@ function ProductsCategory(props) {
               image={item.image}
               productName={item.productName}
               price={item.price}
+              prevPrice={item.prevPrice}
             />
           );
         }

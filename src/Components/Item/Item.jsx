@@ -14,9 +14,16 @@ function Item(props) {
       >
         <img onClick={() => setSelectedMenu("")} src={props.image} alt="" />
       </Link>
+
       <div className="itemDiv-description">
         <h2>{props.productName}</h2>
-        <p>${props.price}</p>
+
+        <div className="description-price">
+          {props.prevPrice == "" ? null : (
+            <p className="previous-price">${props.prevPrice}</p>
+          )}
+          <p className="current-price">${props.price}</p>
+        </div>
       </div>
     </div>
   );

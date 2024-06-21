@@ -7,6 +7,7 @@ let productData = [
     productName: "Keyboard",
     image: keyboardImage,
     price: 99,
+    prevPrice: 120,
     category: "office"
   },
   {
@@ -14,6 +15,7 @@ let productData = [
     productName: "Mouse",
     image: mouseImage,
     price: 46.5,
+    prevPrice: 60,
     category: "gaming"
   },
 ];
