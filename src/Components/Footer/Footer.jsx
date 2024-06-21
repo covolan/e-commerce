@@ -4,9 +4,9 @@ import "./Footer.css"
 function Footer() {
   return (
     <div className="footer">
-      <h2>FOOTER TITLE / COMPANY LOGO</h2>
+      <h2 className="footer-title">INFORMATIKA</h2>
       <ul className="footer-links">
-        <li>Products</li>
+        <li>Home</li>
         <li>Contact</li>
         <li>Carrrers</li>
         <li>Company</li>

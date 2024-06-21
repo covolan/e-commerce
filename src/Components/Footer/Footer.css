@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .footer {
     text-align: center;
     margin-top: 48px;
@@ -22,6 +24,14 @@
     hr {
         border: 2px solid hsl(0, 0%, 75%);
     }
+}
+
+.footer-title {
+    font-size: 36px;
+    color: var(--bluebonnet-shades-60);
+    letter-spacing: 4px;
+    font-family: "Bebas Neue", sans-serif;
+    
 }
 
 .footer-copyright {

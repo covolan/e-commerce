@@ -21,6 +21,7 @@
     padding: 12px 18px 18px;
     h2 {
         font-size: 18px;
+        color: var(--bluebonnet-shades-80);
     }
 }
 
@@ -33,6 +34,7 @@
 .current-price {
     font-size: 18px;
     font-weight: 500;
+    color: var(--bluebonnet-shades-40);
 }
 
 .previous-price {
