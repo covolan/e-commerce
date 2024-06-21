@@ -16,7 +16,7 @@
             border: 2px solid transparent;
             transition: border 0.2s ease;
             &:hover {
-                border-bottom: 2px solid hsl(0, 0%, 75%);
+                border-bottom: 2px solid var(--bluebonnet-shades-60);
             }
         }
     }
@@ -32,6 +32,14 @@
     letter-spacing: 4px;
     font-family: "Bebas Neue", sans-serif;
     
+}
+
+.icon {
+    max-width: 36px;
+    transition: scale 0.2s ease;
+    &:hover {
+        scale: 105%;
+    }
 }
 
 .footer-copyright {

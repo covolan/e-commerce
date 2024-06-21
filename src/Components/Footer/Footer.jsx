@@ -1,5 +1,9 @@
 import React from "react";
 import "./Footer.css"
+import instagramLogo from "../assets/instagram.svg"
+import whasappLogo from "../assets/whatsapp.svg"
+import twitterLogo from "../assets/logo-twitter.svg"
+
 
 function Footer() {
   return (
@@ -12,9 +16,10 @@ function Footer() {
         <li>Company</li>
       </ul>
       <ul className="footer-socials">
-        <li>Instagram</li>
-        <li>Whatsapp</li>
-        <li>X</li>
+        <li><img className="icon" src={instagramLogo} alt="" /></li>
+        <li><img className="icon" src={whasappLogo} alt="" /></li>
+        <li><img className="icon" src={twitterLogo} alt="" /></li>
+
       </ul>
       <hr />
         <p className="footer-copyright">
