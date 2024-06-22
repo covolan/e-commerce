@@ -16,11 +16,7 @@ function ProductsCategory(props) {
           return (
             <Item
               key={index}
-              id={item.id}
-              image={item.image}
-              productName={item.productName}
-              price={item.price}
-              prevPrice={item.prevPrice}
+              product={item}
             />
           );
         }

@@ -6,10 +6,34 @@ import Item from "../Item/Item";
 function Popular() {
   return (
     <div className="popular">
-      <h1>Popular in Office</h1>
+      <h1 className="popular-title">Popular in Office</h1>
       <hr />
       <div className="popular-products">
         {productData.map((product, index) => {
+          return (
+            <Item
+            key={index}
+            product={product}
+            />
+          );
+        })}
+        {productData.map((product, index) => {
+          return (
+            <Item
+            key={index}
+            product={product}
+            />
+          );
+        })}
+        {productData.map((product, index) => {
+          return (
+            <Item
+            key={index}
+            product={product}
+            />
+          );
+        })}
+                {productData.map((product, index) => {
           return (
             <Item
             key={index}
