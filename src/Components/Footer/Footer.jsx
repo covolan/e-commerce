@@ -8,6 +8,7 @@ import twitterLogo from "../assets/logo-twitter.svg"
 function Footer() {
   return (
     <div className="footer">
+      <hr />
       <h2 className="footer-title">INFORMATIKA</h2>
       <ul className="footer-links">
         <li>Home</li>
@@ -19,7 +20,6 @@ function Footer() {
         <li><img className="icon" src={instagramLogo} alt="" /></li>
         <li><img className="icon" src={whasappLogo} alt="" /></li>
         <li><img className="icon" src={twitterLogo} alt="" /></li>
-
       </ul>
       <hr />
         <p className="footer-copyright">
