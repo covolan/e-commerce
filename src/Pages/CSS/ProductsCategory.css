@@ -19,3 +19,11 @@
     font-weight: 600;
   }
 }
+
+.category-products {
+  display: flex;
+  max-width: 1120px;
+  flex-flow: row wrap;
+  margin: auto;
+  justify-content: center;
+}

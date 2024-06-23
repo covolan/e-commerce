@@ -19,6 +19,50 @@ let productData = [
     prevPrice: 60,
     popular: true,
     category: "gaming"
+  },  {
+    id: 3,
+    productName: "Mouse",
+    image: mouseImage,
+    price: 46.5,
+    prevPrice: 60,
+    popular: true,
+    category: "gaming"
+  },
+  {
+    id: 4,
+    productName: "Mouse",
+    image: mouseImage,
+    price: 46.5,
+    prevPrice: 60,
+    popular: true,
+    category: "gaming"
+  },
+  {
+    id: 5,
+    productName: "Mouse",
+    image: mouseImage,
+    price: 46.5,
+    prevPrice: 60,
+    popular: true,
+    category: "gaming"
+  },
+  {
+    id: 6,
+    productName: "Mouse",
+    image: mouseImage,
+    price: 46.5,
+    prevPrice: 60,
+    popular: true,
+    category: "gaming"
+  },
+  {
+    id: 7,
+    productName: "Mouse",
+    image: mouseImage,
+    price: 46.5,
+    prevPrice: 60,
+    popular: true,
+    category: "gaming"
   },
 ];
 
