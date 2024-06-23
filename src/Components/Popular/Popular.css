@@ -3,7 +3,7 @@
     margin: 36px 0;
     hr {
         max-width: 30%;
-        margin: 8px auto 16px;
+        margin: 8px auto 32px;
         border-radius: 20px;
         border: 3px solid var(--bluebonnet-tints-80);
     }
@@ -11,6 +11,7 @@
 
 .popular-title {
     color: var(--bluebonnet-shades-60);
+    margin-top: 62px;
 }
 
 .popular-products {
