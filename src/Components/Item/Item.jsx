@@ -12,14 +12,14 @@ function Item({product}) {
         to={`/product/${product.id}`}
         style={{ textDecoration: "inherit", color: "inherit" }}
       >
-        <img onClick={() => setSelectedMenu("")} src={product.image} alt="" />
+        <img onClick={() => setSelectedMenu("")} src={product.image[0]} alt="" />
       </Link>
 
       <div className="itemDiv-description">
         <h2>{product.productName}</h2>
 
         <div className="description-price">
-          {product.price == "" ? null : (
+          {product.prevPrice == 0 ? null : (
             <p className="previous-price">${product.prevPrice}</p>
           )}
           <p className="current-price">${product.price}</p>

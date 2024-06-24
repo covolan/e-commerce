@@ -20,7 +20,7 @@
     align-items: center;
     padding: 12px 18px 18px;
     h2 {
-        font-size: 18px;
+        font-size: 16px;
         color: var(--bluebonnet-shades-80);
     }
 }

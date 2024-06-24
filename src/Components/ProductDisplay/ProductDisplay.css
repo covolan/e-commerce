@@ -38,13 +38,9 @@
     margin-bottom: 32px;
 }
 
-.productDisplay-rating {
-    font-size: 1.5rem;
-}
-
 .productDisplay-price {
     font-size: 1.5rem;
-    margin-bottom: 32px;
+    margin: 16px 0 32px;
 }
 
 .productDisplay-description {
