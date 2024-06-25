@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .navbar {
-    padding: 24px 12px;
+    padding: 32px;
     box-shadow: 0 1px 3px -2px black;
 }
 
 .navbar-content {
     max-width: 1280px;
+    padding: 0 16px;
     display: flex;
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-between;
     
 }
 

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Breadcrum from '../Components/Breadcrums/Breadcrum';
 import { ShopContext } from '../Context/ShopContext';
 import ProductDisplay from '../Components/ProductDisplay/ProductDisplay';
+import "./CSS/Product.css"
 
 function Product() {
   const {productData} = useContext(ShopContext);
@@ -10,7 +11,7 @@ function Product() {
   const product = productData.find((item) => item.id == Number(productId));
 
   return (
-    <div>
+    <div className='product'>
       <Breadcrum product={product} />
       <ProductDisplay product={product}/>
     </div>
