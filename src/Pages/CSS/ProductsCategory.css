@@ -27,3 +27,8 @@
   margin: auto;
   justify-content: center;
 }
+
+.pagination {
+  margin: 32px auto;
+  width: fit-content;
+}
