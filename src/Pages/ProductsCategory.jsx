@@ -9,7 +9,8 @@ function ProductsCategory(props) {
   const products = productData.filter(
     (prod) => prod.category == props.category
   );
-  const PRODUCTS_PER_PAGE = 4;
+  const PRODUCTS_PER_PAGE = 4
+;
   const QUANTITY_OF_PAGES = Math.ceil(products.length / PRODUCTS_PER_PAGE);
   const [displayProd, setDisplayProd] = useState(
     products.slice(0, PRODUCTS_PER_PAGE)
@@ -17,9 +18,12 @@ function ProductsCategory(props) {
   const [page, setPage] = useState(1);
 
   const handlePageChange = (event, value) => {
+    if (value == page) {
+      return;
+    }
     setPage(value);
     const totalItems = PRODUCTS_PER_PAGE * value;
-    setDisplayProd(products.slice(totalItems - 4, totalItems));
+    setDisplayProd(products.slice(totalItems - PRODUCTS_PER_PAGE, totalItems));
   };
 
   useEffect(() => {
