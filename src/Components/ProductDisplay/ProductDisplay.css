@@ -22,7 +22,7 @@
 
 .secondary-image {
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid hsl(0, 0%, 60%);
     border-radius: 8px;
     object-fit: contain;
     height: 100%;

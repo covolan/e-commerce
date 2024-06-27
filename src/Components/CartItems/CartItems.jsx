@@ -1,27 +1,48 @@
-import React, { useContext } from 'react'
-import "./CartItems.css"
-import { ShopContext } from '../../Context/ShopContext'
+import React, { useContext } from "react";
+import "./CartItems.css";
+import { ShopContext } from "../../Context/ShopContext";
 
 function CartItems() {
-    const { productData, cartItems, delFromCart } = useContext(ShopContext);
+  const { productData, cartItems, delFromCart } = useContext(ShopContext);
   return (
-    <div className='cartItems'>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Image</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
         {productData.map((item) => {
-            if(cartItems[item.id] > 0) {
-                return(
-                    <div className="Item">
-                        <img src={item.image} alt="" />
-                        <p>{item.productName}</p>
-                        <p>{item.price} </p>
-                        <p> Quantity: {cartItems[item.id]} </p>
-                        <p> Total: {item.price * cartItems[item.id]} </p>
-                        <p onClick={() => {delFromCart(item.id)}}>remove</p>
-                    </div>
-                )
-            }
+          if (cartItems[item.id] > 0) {
+            return (
+              <tr key={item.productName}>
+                <td>{item.productName}</td>
+                <td>
+                  <img className="product-image" src={item.image[0]} alt="" />
+                </td>
+                <td>{item.price}</td>
+                <td>{cartItems[item.id]}</td>
+
+                <td>{item.price * cartItems[item.id]}</td>
+                <td
+                  onClick={() => {
+                    delFromCart(item.id);
+                  }}
+                >
+                  X
+                </td>
+              </tr>
+            );
+          }
         })}
-    </div>
-  )
+      </tbody>
+    </table>
+  );
 }
 
-export default CartItems
+export default CartItems;
