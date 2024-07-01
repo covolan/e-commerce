@@ -1,13 +1,36 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./CartItems.css";
 import { ShopContext } from "../../Context/ShopContext";
 import cancelIcon from "../assets/cancel.svg";
 
 function CartItems() {
   const { productData, cartItems, delFromCart } = useContext(ShopContext);
+  const [totalValue, setTotalValue] = useState(0);
+  const [cartTotalItems, setCartTotalItems] = useState(0);
+
+  const taxes = 0.15;
+
+
+  const runTotal = () => {
+    let tempTotal = 0;
+    let tempCartTotalItems = 0;
+    productData.map(item => {
+      if(cartItems[item.id] > 0) {
+        tempTotal += item.price * cartItems[item.id];
+        tempCartTotalItems += cartItems[item.id];
+      }
+    })
+    setTotalValue(tempTotal);
+    setCartTotalItems(tempCartTotalItems);
+  }
+
+  useEffect(() => {
+    runTotal();
+  }, [cartItems])
+
   return (
     <div className="cart">
-      <h1 className="cart-title">Your cart Has X items</h1>
+      <h1 className="cart-title">Your cart Has {cartTotalItems} items</h1>
       <table>
         <thead>
           <tr>
@@ -44,6 +67,27 @@ function CartItems() {
           })}
         </tbody>
       </table>
+      <div className="cart-summary">
+        <table className="total-table">
+          <tbody>
+            <tr>
+              <td className="total-table-emph">Subtotal:</td>
+              <td className="total-table-amount">${totalValue}</td>
+            </tr>
+            <tr>
+              <td className="total-table-emph">Taxes:</td>
+              <td className="total-table-amount">${totalValue * taxes}</td>
+            </tr>
+            <tr>
+              <td className="total-table-emph grand-total">Grand Total:</td>
+              <td className="total-table-amount grand-total">${(totalValue * taxes) + totalValue}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <button className="checkout-btn">
+          Check out
+        </button>
     </div>
   );
 }
