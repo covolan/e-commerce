@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import "./ProductDisplay.css";
 import { ShopContext } from "../../Context/ShopContext";
 import Rating from "@mui/material/Rating";
+import CommentSection from "./CommentSection";
 
 function ProductDisplay(props) {
   const { product } = props;
@@ -51,6 +52,7 @@ function ProductDisplay(props) {
           ADD TO CART
         </button>
       </div>
+      <CommentSection></CommentSection>
     </div>
   );
 }

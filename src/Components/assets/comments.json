@@ -1,0 +1,50 @@
+[
+    {
+        "image" : "../src/Components/assets/profile-pic.jpg",
+        "name": "Joshua Benking",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit assumenda atque est aperiam et. Quod esse optio exercitationem sed quisquam voluptate! Optio qui corporis architecto tempora rem quia rerum labore?",
+        "rating": 4        
+    },
+    {
+        "image" : "../src/Components/assets/profile-pic.jpg",
+        "name": "Joshua Benking",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit assumenda atque est aperiam et. Quod esse optio exercitationem sed quisquam voluptate! Optio qui corporis architecto tempora rem quia rerum labore?",
+        "rating": 3        
+    },
+    {
+        "image" : "../src/Components/assets/profile-pic.jpg",
+        "name": "Joshua Benking",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit assumenda atque est aperiam et. Quod esse optio exercitationem sed quisquam voluptate! Optio qui corporis architecto tempora rem quia rerum labore?",
+        "rating": 5        
+    },
+    {
+        "image" : "../src/Components/assets/profile-pic.jpg",
+        "name": "Joshua Benking",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit assumenda atque est aperiam et. Quod esse optio exercitationem sed quisquam voluptate! Optio qui corporis architecto tempora rem quia rerum labore?",
+        "rating": 2        
+    },
+    {
+        "image" : "../src/Components/assets/profile-pic.jpg",
+        "name": "Joshua Benking",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit assumenda atque est aperiam et. Quod esse optio exercitationem sed quisquam voluptate! Optio qui corporis architecto tempora rem quia rerum labore?",
+        "rating": 3        
+    },
+    {
+        "image" : "../src/Components/assets/profile-pic.jpg",
+        "name": "Joshua Benking",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit assumenda atque est aperiam et. Quod esse optio exercitationem sed quisquam voluptate! Optio qui corporis architecto tempora rem quia rerum labore?",
+        "rating": 4        
+    },
+    {
+        "image" : "../src/Components/assets/profile-pic.jpg",
+        "name": "Joshua Benking",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit assumenda atque est aperiam et. Quod esse optio exercitationem sed quisquam voluptate! Optio qui corporis architecto tempora rem quia rerum labore?",
+        "rating": 4        
+    },
+    {
+        "image" : "../src/Components/assets/profile-pic.jpg",
+        "name": "Joshua Benking",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit assumenda atque est aperiam et. Quod esse optio exercitationem sed quisquam voluptate! Optio qui corporis architecto tempora rem quia rerum labore?",
+        "rating": 5        
+    }
+]
