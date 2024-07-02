@@ -21,7 +21,7 @@ function ProductDisplay(props) {
         <div className="side-images">
           {imageIndexList.map((index) => {
             return(
-              product.image[index] == undefined ? null : 
+              product.image[index] == undefined ? <div className="placeholder-div"></div> : 
               <img key={product.image[index]}
               onClick={() => {
                 handleImageClick(index);
