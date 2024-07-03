@@ -1,9 +1,9 @@
 import React from "react";
 
-function HeroComponentRoot({ children }) {
+function HeroComponentRoot({ children, heroBg }) {
   return (
-    <div className="hero">
-      <div className="hero-content">{children}</div>
+    <div className={`hero ${heroBg}`}>
+      <div className="hero-content fade-in-top">{children}</div>
     </div>
   );
 }

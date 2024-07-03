@@ -30,6 +30,16 @@
   --bluebonnet-shades-40: #19198f;
   --bluebonnet-shades-60: #10105f;
   --bluebonnet-shades-80: #08082f;
+  --yellow: #efef2a;
+  --yellow-tints-20: #f2f254;
+  --yellow-tints-40: #f5f57f;
+  --yellow-tints-60: #f8f8a9;
+  --yellow-tints-80: #fbfbd4;
+  --yellow-shades-0: #efef2a;
+  --yellow-shades-20: #bfbf21;
+  --yellow-shades-40: #8f8f19;
+  --yellow-shades-60: #5f5f10;
+  --yellow-shades-80: #2f2f08;
 }
 
 body {

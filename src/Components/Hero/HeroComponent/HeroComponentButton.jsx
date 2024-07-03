@@ -1,7 +1,7 @@
 import React from "react";
 
-function HeroComponentButton({ children }) {
-  return <button>{children}</button>;
+function HeroComponentButton({ children, color }) {
+  return <button className={color}>{children}</button>;
 }
 
 export default HeroComponentButton;

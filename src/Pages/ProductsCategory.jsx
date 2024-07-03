@@ -3,24 +3,30 @@ import "./CSS/ProductsCategory.css";
 import { ShopContext } from "../Context/ShopContext";
 import Item from "../Components/Item/Item";
 import Pagination from "@mui/material/Pagination";
+import HeroGaming from "../Components/Hero/HeroGaming";
+import HeroOffice from "../Components/Hero/HeroOffice";
 
 function ProductsCategory(props) {
   const { productData } = useContext(ShopContext);
+
   const products = productData.filter(
     (prod) => prod.category == props.category
   );
-  const PRODUCTS_PER_PAGE = 4
-;
+
+  const PRODUCTS_PER_PAGE = 4;
   const QUANTITY_OF_PAGES = Math.ceil(products.length / PRODUCTS_PER_PAGE);
+
   const [displayProd, setDisplayProd] = useState(
     products.slice(0, PRODUCTS_PER_PAGE)
   );
+
   const [page, setPage] = useState(1);
 
   const handlePageChange = (event, value) => {
     if (value == page) {
       return;
     }
+
     setPage(value);
     const totalItems = PRODUCTS_PER_PAGE * value;
     setDisplayProd(products.slice(totalItems - PRODUCTS_PER_PAGE, totalItems));
@@ -32,9 +38,10 @@ function ProductsCategory(props) {
   }, [props.category]);
 
   // TODO: Create API to add products
-
   return (
     <div className="category">
+      {props.category == "gaming" ? <HeroGaming /> : <HeroOffice />}
+
       <div className="category-header">
         <p>
           Showing {displayProd.length} out of {products.length} products
