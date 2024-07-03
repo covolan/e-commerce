@@ -3,16 +3,28 @@ import "./Item.css";
 import { Link } from "react-router-dom";
 import { MenuContext } from "../../Context/MenuContext";
 
-function Item({product}) {
+function Item({ product }) {
   const [selectedMenu, setSelectedMenu] = useContext(MenuContext);
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  };
 
   return (
     <div className="itemDiv">
       <Link
         to={`/product/${product.id}`}
         style={{ textDecoration: "inherit", color: "inherit" }}
+        onClick={goToTop}
       >
-        <img onClick={() => setSelectedMenu("")} src={product.image[0]} alt="" />
+        <img
+          onClick={() => setSelectedMenu("")}
+          src={product.image[0]}
+          alt=""
+        />
       </Link>
 
       <div className="itemDiv-description">
