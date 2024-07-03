@@ -1,52 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 .footer {
-    text-align: center;
-    margin-top: 48px;
+  text-align: center;
+  margin-top: 48px;
 
-    ul {
-        padding: 0;
-        justify-content: center;
-        display: flex;
-        gap: 36px;
-        li {
-            list-style-type: none;
-            font-size: 18px;
-            cursor: pointer;
-            border: 2px solid transparent;
-            transition: border 0.2s ease;
-            &:hover {
-                border-bottom: 2px solid var(--bluebonnet-shades-60);
-            }
-        }
-    }
+  background-color: var(--bluebonnet-tints-80);
 
-    hr {
-        border: 2px solid hsl(0, 0%, 75%);
-    }
+  ul {
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+
+  hr {
+    border: 2px solid var(--bluebonnet-shades-60);
+  }
 }
 
-.footer-socials, .footer-title, .footer-links {
-    max-width: 1280px;
-    margin: 20px auto;
+.footer-left {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.footer-links-list {
+  margin: 16px 0;
+}
+
+.footer-links {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    list-style-type: square;
+    color: var(--bluebonnet-shades-60);
+  }
 }
 
 .footer-title {
-    font-size: 36px;
-    color: var(--bluebonnet-shades-60);
-    letter-spacing: 4px;
-    font-family: "Bebas Neue", sans-serif;
-    
+  font-size: 36px;
+  padding-top: 24px;
+  color: var(--bluebonnet-shades-60);
+  letter-spacing: 4px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-.icon {
-    max-width: 36px;
-    transition: scale 0.2s ease;
-    &:hover {
-        scale: 105%;
-    }
+.footer-socials {
+  margin: 16px 0;
+}
+
+.icon-socials {
+  padding: none;
+  max-width: 36px;
+  cursor: pointer;
+  &:hover {
+    scale: 105%;
+  }
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-email {
+  height: fit-content;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  padding: 8px;
+  &:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 0px 1px var(--bluebonnet-shades-60);
+  }
+}
+
+.footer-email-msg {
+  font-weight: 600;
+  padding: 8px;
+}
+
+.footer-send-btn {
+  border-radius: 0px 8px 8px 0px;
+  padding: 8px;
+  &:hover {
+    color: white;
+    background-color: var(--bluebonnet-shades-60);
+  }
 }
 
 .footer-copyright {
-    margin: 18px 0;
+  padding: 18px 0;
 }
