@@ -25,8 +25,12 @@ export default function CommentSection() {
               readOnly
             />
             <div className="comment-thumbs">
-              <span class="material-symbols-outlined">thumb_up</span>
-              <span class="material-symbols-outlined">thumb_down</span>
+              <span class="material-symbols-outlined animated-icon">
+                thumb_up
+              </span>
+              <span class="material-symbols-outlined animated-icon">
+                thumb_down
+              </span>
             </div>
           </div>
         </div>
