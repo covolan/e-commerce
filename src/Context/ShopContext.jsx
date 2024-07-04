@@ -11,17 +11,33 @@ const getDefaultCart = () => {
   return cart;
 };
 
-
 function ShopContextProvider(props) {
   const addToCart = (itemId) => {
-    setCartItems((previousVal) => ({...previousVal, [itemId]:previousVal[itemId] + 1}))    
-  }
-  
+    setCartItems((previousVal) => ({
+      ...previousVal,
+      [itemId]: previousVal[itemId] + 1,
+    }));
+  };
+
   const delFromCart = (itemId) => {
-    setCartItems((previousVal) => ({...previousVal, [itemId]:previousVal[itemId] - 1}))
-  }
+    setCartItems((previousVal) => ({
+      ...previousVal,
+      [itemId]: previousVal[itemId] - 1,
+    }));
+  };
+
+  const emptyCartItem = (itemId) => {
+    setCartItems((previousVal) => ({ ...previousVal, [itemId]: 0 }));
+  };
+
   const [cartItems, setCartItems] = useState(getDefaultCart());
-  const contextValue = { productData, cartItems, addToCart, delFromCart };
+  const contextValue = {
+    productData,
+    cartItems,
+    addToCart,
+    delFromCart,
+    emptyCartItem,
+  };
 
   return (
     <ShopContext.Provider value={contextValue}>

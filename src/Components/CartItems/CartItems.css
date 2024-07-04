@@ -105,6 +105,40 @@ td {
   }
 }
 
+.quantity-content {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.left-btn-qnt,
+.right-btn-qnt {
+  padding: 8px 16px;
+  margin: 0px;
+  background-color: hsl(0, 0%, 95%);
+  &:hover {
+    background-color: var(--bluebonnet-shades-80);
+    color: white;
+  }
+}
+
+.left-btn-qnt {
+  border-radius: 8px 0px 0px 8px;
+}
+
+.right-btn-qnt {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.quantity-text {
+  font-weight: 600;
+  font-size: 16px;
+  background-color: hsl(0, 0%, 95%);
+  padding: 8px;
+}
+
 .empty-cart {
   margin: 48px 16px;
   text-align: center;

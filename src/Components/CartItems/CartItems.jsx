@@ -4,12 +4,14 @@ import { ShopContext } from "../../Context/ShopContext";
 import cancelIcon from "../assets/cancel.svg";
 
 function CartItems() {
-  const { productData, cartItems, delFromCart } = useContext(ShopContext);
+  const { productData, cartItems, delFromCart, addToCart, emptyCartItem } =
+    useContext(ShopContext);
   const [totalValue, setTotalValue] = useState(0);
   const [cartTotalItems, setCartTotalItems] = useState(0);
 
   const taxes = 0.15;
 
+  //  Run the total cost of the added products to the cart
   const runTotal = () => {
     let tempTotal = 0;
     let tempCartTotalItems = 0;
@@ -27,10 +29,11 @@ function CartItems() {
     runTotal();
   }, [cartItems]);
 
+  // Custom page if cart is empty, TODO: Send it to a separated component
   if (cartTotalItems == 0) {
     return (
       <div className="empty-cart">
-        <span class="material-symbols-outlined icon-cart">
+        <span className="material-symbols-outlined icon-cart">
           sentiment_dissatisfied
         </span>
         <h1 className="empty-cart-title">
@@ -45,7 +48,7 @@ function CartItems() {
 
   return (
     <div className="cart">
-      <h1 className="cart-title">Your cart Has {cartTotalItems} items</h1>
+      <h1 className="cart-title">Your cart Has {cartTotalItems} products</h1>
       <table>
         <thead>
           <tr>
@@ -65,13 +68,33 @@ function CartItems() {
                     {item.productName}
                   </td>
                   <td>{`$${item.price}`}</td>
-                  <td>{cartItems[item.id]}</td>
+                  <td className="quantity">
+                    <div className="quantity-content">
+                      <button
+                        onClick={() => {
+                          delFromCart(item.id);
+                        }}
+                        className="left-btn-qnt"
+                      >
+                        -
+                      </button>
+                      <p className="quantity-text">{cartItems[item.id]}</p>
+                      <button
+                        onClick={() => {
+                          addToCart(item.id);
+                        }}
+                        className="right-btn-qnt"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </td>
                   <td className="total">
                     {`$${item.price * cartItems[item.id]}`}
                     <img
                       className="cancel"
                       onClick={() => {
-                        delFromCart(item.id);
+                        emptyCartItem(item.id);
                       }}
                       src={cancelIcon}
                     />
@@ -87,16 +110,18 @@ function CartItems() {
           <tbody>
             <tr>
               <td className="total-table-emph">Subtotal:</td>
-              <td className="total-table-amount">${totalValue}</td>
+              <td className="total-table-amount">${totalValue.toFixed(2)}</td>
             </tr>
             <tr>
               <td className="total-table-emph">Taxes:</td>
-              <td className="total-table-amount">${totalValue * taxes}</td>
+              <td className="total-table-amount">
+                ${(totalValue * taxes).toFixed(2)}
+              </td>
             </tr>
             <tr>
               <td className="total-table-emph grand-total">Grand Total:</td>
               <td className="total-table-amount grand-total">
-                ${totalValue * taxes + totalValue}
+                ${(totalValue * taxes + totalValue).toFixed(2)}
               </td>
             </tr>
           </tbody>
