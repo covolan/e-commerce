@@ -28,6 +28,56 @@
   border: 3px solid var(--bluebonnet-tints-80);
 }
 
+.comment-text-area {
+  display: flex;
+  justify-content: center;
+  margin: 24px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  max-width: 1000px;
+}
+
+#commentTextArea {
+  resize: none;
+  width: 100%;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  padding: 8px;
+  &:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 0px 2px var(--bluebonnet-shades-60);
+  }
+}
+
+.comment-text-area-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-area-btn-top,
+.text-area-btn-bottom {
+  border-radius: 0;
+  width: 100%;
+  max-width: unset;
+  &:hover {
+    color: white;
+  }
+}
+
+.text-area-btn-top {
+  border-radius: 0px 8px 0px 0px;
+  &:hover {
+    background-color: hsl(0, 85%, 65%);
+  }
+}
+
+.text-area-btn-bottom {
+  border-radius: 0px 0px 8px 0px;
+  &:hover {
+    background-color: var(--bluebonnet-shades-60);
+  }
+}
+
 .comment {
   max-width: 1000px;
   padding: 16px;

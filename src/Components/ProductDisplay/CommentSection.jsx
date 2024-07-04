@@ -10,6 +10,14 @@ export default function CommentSection() {
       <h1 className="comment-title">Comments</h1>
       <hr className="title-bar" />
 
+      <div className="comment-text-area">
+        <textarea name="comment" id="commentTextArea"></textarea>
+        <div className="comment-text-area-right">
+          <button className="text-area-btn-top">clear</button>
+          <button className="text-area-btn-bottom">add comment</button>
+        </div>
+      </div>
+
       {commentsData.map((comment, index) => (
         <div key={comment.name + index} className="comment">
           <div className="comment-top">
@@ -25,10 +33,10 @@ export default function CommentSection() {
               readOnly
             />
             <div className="comment-thumbs">
-              <span class="material-symbols-outlined animated-icon">
+              <span className="material-symbols-outlined animated-icon">
                 thumb_up
               </span>
-              <span class="material-symbols-outlined animated-icon">
+              <span className="material-symbols-outlined animated-icon">
                 thumb_down
               </span>
             </div>
