@@ -1,48 +1,122 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import commentsData from "../assets/comments.json";
 import "./CommentSection.css";
-import pic from "../assets/profile-pic.jpg";
 import { Rating } from "@mui/material";
+import profPicPlaceholder from "../assets/profile-pic.jpg";
 
 export default function CommentSection() {
+  const commentAreaRef = useRef(null);
+  const [rating, setRating] = useState(0);
+  const localStoragedComments = JSON.parse(
+    localStorage.getItem("local-comments-store")
+  );
+  const [localComments, setLocalComments] = useState(() => {
+    if (localStoragedComments == null) {
+      return [];
+    }
+    return localStoragedComments;
+  });
+
+  const addComment = () => {
+    setLocalComments([
+      {
+        id: Date(),
+        name: "Abu Dhabi",
+        comment: commentAreaRef.current.value,
+        rating: rating,
+      },
+      ...localComments,
+    ]);
+    setRating(0);
+    clearComment();
+  };
+
+  const clearComment = () => {
+    commentAreaRef.current.value = "";
+  };
+
+  const clearLocalStorage = () => {
+    localStorage.clear();
+  };
+
+  useEffect(() => {
+    localStorage.setItem("local-comments-store", JSON.stringify(localComments));
+  }, [localComments]);
+
   return (
     <div className="comment-section">
       <h1 className="comment-title">Comments</h1>
       <hr className="title-bar" />
 
+      <button onClick={clearLocalStorage}>Clear local storage</button>
+
       <div className="comment-text-area">
-        <textarea name="comment" id="commentTextArea"></textarea>
+        <textarea
+          ref={commentAreaRef}
+          name="comment"
+          id="commentTextArea"
+        ></textarea>
         <div className="comment-text-area-right">
-          <button className="text-area-btn-top">clear</button>
-          <button className="text-area-btn-bottom">add comment</button>
+          <Rating
+            value={rating}
+            onChange={(event, value) => {
+              setRating(value);
+            }}
+            sx={{ p: 2 }}
+          />
+          <button onClick={clearComment} className="text-area-btn-top">
+            clear
+          </button>
+          <button onClick={addComment} className="text-area-btn-bottom">
+            add comment
+          </button>
         </div>
       </div>
 
-      {commentsData.map((comment, index) => (
-        <div key={comment.name + index} className="comment">
-          <div className="comment-top">
-            <img className="comment-image" src={comment.image} alt="" />
-            <h2>{comment.name}</h2>
-          </div>
+      {localComments &&
+        localComments.map((comment, index) => (
+          <CommentCard
+            name={comment.name}
+            image={profPicPlaceholder}
+            comment={comment.comment}
+            key={comment.name + index}
+            rating={comment.rating}
+          />
+        ))}
 
-          <p className="comment-comment">{comment.comment}</p>
-          <div className="comment-bottom">
-            <Rating
-              value={comment.rating}
-              className="comment-rating"
-              readOnly
-            />
-            <div className="comment-thumbs">
-              <span className="material-symbols-outlined animated-icon">
-                thumb_up
-              </span>
-              <span className="material-symbols-outlined animated-icon">
-                thumb_down
-              </span>
-            </div>
-          </div>
-        </div>
+      {commentsData.map((comment, index) => (
+        <CommentCard
+          name={comment.name}
+          image={comment.image}
+          comment={comment.comment}
+          key={comment.name + index}
+          rating={comment.rating}
+        />
       ))}
+    </div>
+  );
+}
+
+function CommentCard({ name, image, comment, rating }) {
+  return (
+    <div className="comment">
+      <div className="comment-top">
+        <img className="comment-image" src={image} alt="" />
+        <h2>{name}</h2>
+      </div>
+
+      <p className="comment-comment">{comment}</p>
+      <div className="comment-bottom">
+        <Rating value={rating} className="comment-rating" readOnly />
+        <div className="comment-thumbs">
+          <span className="material-symbols-outlined animated-icon">
+            thumb_up
+          </span>
+          <span className="material-symbols-outlined animated-icon">
+            thumb_down
+          </span>
+        </div>
+      </div>
     </div>
   );
 }

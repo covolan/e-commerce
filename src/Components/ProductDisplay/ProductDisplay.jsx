@@ -9,6 +9,21 @@ function ProductDisplay(props) {
   const { addToCart } = useContext(ShopContext);
 
   const [mainImage, setMainImage] = useState(product.image[0]);
+  const [popUpBuy, setPopUpBuy] = useState();
+
+  const handleMultipleFunctionsClick = (productID) => {
+    addToCart(productID);
+    handlePopDisplay();
+  };
+
+  const handlePopDisplay = () => {
+    setPopUpBuy(
+      <p className="pop-up-buy slide-in-left">Product added to cart!</p>
+    );
+    setTimeout(() => {
+      setPopUpBuy();
+    }, 1500);
+  };
 
   const handleImageClick = (imageIndex) => {
     setMainImage(product.image[imageIndex]);
@@ -48,16 +63,17 @@ function ProductDisplay(props) {
         <Rating name="rating" value={product.rating} readOnly></Rating>
         <p className="productDisplay-price">${product.price}</p>
         <p className="productDisplay-description">{product.description}</p>
+        {popUpBuy}
         <button
           onClick={() => {
-            addToCart(product.id);
+            handleMultipleFunctionsClick(product.id);
           }}
           className="productDisplay-cartBtn"
         >
           ADD TO CART
         </button>
       </div>
-      <CommentSection></CommentSection>
+      <CommentSection />
     </div>
   );
 }
