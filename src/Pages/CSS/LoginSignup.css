@@ -12,8 +12,7 @@
   width: 100%;
   max-width: 500px;
   flex-direction: column;
-  input,
-  button {
+  input {
     padding: 18px 12px;
     margin: 8px;
     border: none;
@@ -24,22 +23,31 @@
       outline: 1px solid;
     }
   }
-  button {
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    &:hover {
-      background-color: hsl(0, 0%, 85%);
-    }
+}
+
+.continue-btn {
+  cursor: pointer;
+  margin: 16px auto;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: hsl(0, 0%, 85%);
   }
 }
 
 .loginSignUp-login {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
 .loginSignUp-terms {
-    display: flex;
-    align-items: center;
-    margin: 8px 0;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  gap: 8px;
+}
+
+.label-login {
+  text-align: left;
+  font-weight: 500;
+  padding-left: 8px;
+  margin-top: 8px;
 }
