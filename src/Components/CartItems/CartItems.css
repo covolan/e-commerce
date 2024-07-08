@@ -157,3 +157,11 @@ td {
   font-size: 64px;
   color: var(--bluebonnet-shades-60);
 }
+
+.purchase-title {
+  margin-bottom: 16px;
+}
+
+.purchase-text {
+  text-align: center;
+}

@@ -2,12 +2,32 @@ import React, { useContext, useEffect, useState } from "react";
 import "./CartItems.css";
 import { ShopContext } from "../../Context/ShopContext";
 import cancelIcon from "../assets/cancel.svg";
+import { Modal, Box } from "@mui/material";
 
 function CartItems() {
   const { productData, cartItems, delFromCart, addToCart, emptyCartItem } =
     useContext(ShopContext);
   const [totalValue, setTotalValue] = useState(0);
   const [cartTotalItems, setCartTotalItems] = useState(0);
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
+  const modalBoxStyle = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: 400,
+    p: 4,
+    bgcolor: "background.paper",
+  };
 
   const taxes = 0.15;
 
@@ -48,6 +68,15 @@ function CartItems() {
 
   return (
     <div className="cart">
+      <Modal open={openModal} onClose={handleCloseModal}>
+        <Box sx={modalBoxStyle}>
+          <h2 className="purchase-title">Thanks for your purchase!</h2>
+          <p className="purchase-text">
+            Feel free to continue exploring our online store
+          </p>
+        </Box>
+      </Modal>
+
       <h1 className="cart-title">Your cart Has {cartTotalItems} products</h1>
       <table>
         <thead>
@@ -127,7 +156,9 @@ function CartItems() {
           </tbody>
         </table>
       </div>
-      <button className="checkout-btn">Check out</button>
+      <button onClick={handleOpenModal} className="checkout-btn">
+        Check out
+      </button>
     </div>
   );
 }
