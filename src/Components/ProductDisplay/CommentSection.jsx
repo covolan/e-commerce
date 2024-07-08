@@ -48,7 +48,7 @@ export default function CommentSection() {
       <h1 className="comment-title">Comments</h1>
       <hr className="title-bar" />
 
-      <button onClick={clearLocalStorage}>Clear local storage</button>
+      {/* <button onClick={clearLocalStorage}>Clear local storage</button> */}
 
       <div className="comment-text-area">
         <textarea
