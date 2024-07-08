@@ -20,6 +20,17 @@ import Screen4k1 from "./screen1.jpg"
 import Screen4k2 from "./screen2.jpg"
 import Screen4k3 from "./screen3.jpg"
 import Screen4k4 from "./screen4.jpg"
+import FortrekHeadset1 from "./fortrek-headphone1.jpg"
+import FortrekHeadset2 from "./fortrek-headphone2.jpg"
+import FortrekHeadset3 from "./fortrek-headphone3.jpg"
+import KBDHyperx1 from "./keyboard-hyperx1.jpg"
+import KBDHyperx2 from "./keyboard-hyperx2.jpg"
+import KBDHyperx3 from "./keyboard-hyperx3.jpg"
+import KBDHyperx4 from "./keyboard-hyperx4.jpg"
+import IntelWebcam1 from "./intelbras-webcam1.jpg"
+import IntelWebcam2 from "./intelbras-webcam2.jpg"
+import IntelWebcam3 from "./intelbras-webcam3.jpg"
+
 
 let productData = [
   {
@@ -163,7 +174,44 @@ let productData = [
       category: "gaming",
       rating: 5,
       description: "The LG 27-Inch UHD 4K Professional Monitor delivers an exceptional visual experience with HDR support, including VESA DisplayHDR 400, providing enhanced brightness and contrast. It improves tone mapping and lighting of SDR content for an HDR-like experience. Perfect for gaming, the 27UP650-W monitor includes technologies such as AMD FreeSync, Game Mode, Black Stabilizer, and Dynamic Action Sync, ensuring superior image quality and optimized performance. Additionally, FreeSync Premium technology ensures smooth and fluid movements, minimizing blurs and screen tearing.",
-      }
+      },
+      {
+        id: 13,
+        productName: "Headset Fortrek",
+        price: 199,
+        prevPrice: 255,
+        image: [FortrekHeadset1, FortrekHeadset2, FortrekHeadset3, undefined],
+        popular: true,
+        category: "gaming",
+        rating: 5,
+        description:
+          "Introducing the Fortrek PRO H2 Gaming Headset, an ideal choice for gamers seeking professional performance. Equipped with flexible bands and cushioned earphones, it provides comfort during long gaming sessions. The modern design includes blue LED lighting on the sides, while the noise-canceling microphone ensures clear communication without external interference. The integrated volume controller, discreetly located behind the left earphone, offers additional convenience for adjusting audio during gameplay. Lightweight and comfortable, weighing only 318 grams, the Fortrek PRO H2 headset is a pleasant choice for any gamer. Additionally, its 2-meter braided cable provides exceptional durability and freedom of movement, eliminating concerns about distance. Elevate your gaming experience with the Fortrek PRO H2 Gaming Headset and immerse yourself in superior quality audio.",
+      },
+      {
+        id: 14,
+        productName: "Keyboard HyperX",
+        price: 99,
+        prevPrice: 150,
+        image: [KBDHyperx1, KBDHyperx2, KBDHyperx3, KBDHyperx4],
+        popular: true,
+        category: "gaming",
+        rating: 5,
+        description:
+          "Illuminate your gaming setup with radiant per-key lighting and dynamic effects that add a touch of style to your PC setup. Durable Aluminum Frame The Alloy MKW100 features a solid aluminum frame designed to provide stability during intense typing sessions. The removable wrist rest helps reduce fatigue during long gaming or work sessions. Responsive and Reliable Dust-Proof Switches Equipped with dust-proof mechanical switches rated for up to 50 million keystrokes, the Alloy MKW100 ensures lasting reliability and quiet operation. The gold-plated USB connector prevents corrosion, while the braided fabric enhances cable longevity for years of dependable use. Customize the RGB light show of the Alloy MKW100 with the powerful and user-friendly HyperX NGENUITY software.Experience superior performance and style with the HyperX Alloy MKW100 Keyboard.",
+      },
+
+      {
+        id: 15,
+        productName: "IntellBrass Webcam",
+        price: 144,
+        prevPrice: 290,
+        image: [IntelWebcam1, IntelWebcam2, IntelWebcam3],
+        popular: true,
+        category: "office",
+        rating: 5,
+        description:
+          "Experience high-quality visuals with Full HD (1080p) resolution. The CAM 1080p delivers sharper videos and more vibrant colors with processed and balanced images. Beamforming Audio Technology This advanced technology focuses audio capture on the focal point, providing clearer sound with less environmental interference. Enhanced Security with Privacy Shutter Ensure your privacy with a built-in privacy shutter that covers the lens when the camera is not in use. Additionally, an LED indicator shows when the camera is active. Flexibility and Performance The CAM 1080p is compatible with videoconferencing apps and can be easily mounted on a tripod. It also features a 360º horizontal and 90° vertical adjustable mount, along with a 2.1 m independent USB cable for optimal positioning and convenience. Elevate your audiovisual experience with the CAM 1080p, designed for superior video quality and secure, clear audio.",
+      },
 ];
 
 export default productData
