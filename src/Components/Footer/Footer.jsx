@@ -3,10 +3,19 @@ import "./Footer.css";
 import instagramLogo from "../assets/instagram.svg";
 import whasappLogo from "../assets/whatsapp.svg";
 import twitterLogo from "../assets/logo-twitter.svg";
+import { Link } from "react-router-dom";
 
 const firstLinks = ["Contact", "Carrers", "Company", "FAQ", "SAC"];
+const firstLinksGoTo = ["", "", "", "", ""];
 const secondLinks = ["Home", "Gaming", "Office", "Login", "Go to Top"];
+const secontLinksGoTo = ["/", "/gaming", "/office", "/login", ""];
 const socialLinks = [instagramLogo, whasappLogo, twitterLogo];
+const goToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 
 function Footer() {
   return (
@@ -22,9 +31,14 @@ function Footer() {
         </ul>
         <ul className="footer-links-list">
           {secondLinks.map((item, index) => (
-            <li key={index + item} className="footer-links">
-              {item}
-            </li>
+            <Link
+              style={{ textDecoration: "inherit", color: "inherit" }}
+              key={index + item}
+              to={secontLinksGoTo[index]}
+              onClick={goToTop}
+            >
+              <li className="footer-links">{item}</li>
+            </Link>
           ))}
         </ul>
         <ul className="footer-socials">
@@ -47,7 +61,9 @@ function Footer() {
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright @ 2024 - All Right Reserved</p>
+      <p className="footer-copyright">
+        Copyright © 2024 Alexandre Covolan (MIT License)
+      </p>
     </div>
   );
 }
