@@ -1,36 +1,47 @@
 import React from "react";
 import { HComp } from "./HeroComponent";
-import heroImageItem from "../assets/headphone-hero.png";
+import heroImageItem from "../assets/keyboard-hero.png";
+import { Link } from "react-router-dom";
 
 export default function HeroGaming() {
   const yellow = "accent-yellow";
 
   return (
     <HComp.Root heroBg={"hero-gaming-bg"}>
-      <HComp.Right imgSrc={heroImageItem} bgDivClassName={"blob-div-gaming"} />
+      <Link to={"/product/14"}>
+        <HComp.Right
+          imgSrc={heroImageItem}
+          bgDivClassName={"blob-div-gaming"}
+        />
+      </Link>
 
       <HComp.Left>
         <HComp.Title>
-          <HComp.Accent color={yellow}>Immerse Yourself:</HComp.Accent>{" "}
-          Unveiling the Ultimate Sound Experience with the new
-          <HComp.Accent color={yellow}> Sony Headphone</HComp.Accent>
+          <HComp.Accent color={yellow}>
+            Unleash Your Gaming Potential with HyperX:
+          </HComp.Accent>{" "}
+          Elevate Your Play with Our
+          <HComp.Accent color={yellow}> Elite Keyboards!</HComp.Accent>
         </HComp.Title>
 
         <HComp.Description>
-          Experience the
+          Join the ranks of elite gamers who trust{" "}
+          <HComp.Accent color={yellow}>HyperX</HComp.Accent> to deliver the
+          performance they demand.{" "}
           <HComp.Accent color={yellow}>
-            {" "}
-            Sony Noise-Cancelling Headset:{" "}
+            Elevate your gaming experience
+          </HComp.Accent>{" "}
+          today with a HyperX keyboard and witness the difference in your
+          gameplay and to endure the toughest challenges and{" "}
+          <HComp.Accent color={yellow}>
+            complement your setup with flair.
           </HComp.Accent>
-          unparalleled sound quality for music, gaming, and calls with
-          industry-leading
-          <HComp.Accent color={yellow}> noise cancellation. </HComp.Accent>
-          Elevate your audio experience with the Sony and immerse yourself in
-          pure sound bliss.
         </HComp.Description>
 
         <HComp.BuySection>
-          <HComp.Button color={"btn-yellow"}>BUY NOW</HComp.Button>
+          <Link to={"/product/14"}>
+            <HComp.Button color={"btn-yellow"}>BUY NOW</HComp.Button>
+          </Link>
           <HComp.BuyMessage>
             And get a{" "}
             <HComp.Accent color={yellow} addClass={"discount"}>
