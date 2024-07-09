@@ -58,6 +58,7 @@ export default function CommentSection() {
         ></textarea>
         <div className="comment-text-area-right">
           <Rating
+            className="comment-add-rating"
             value={rating}
             onChange={(event, value) => {
               setRating(value);

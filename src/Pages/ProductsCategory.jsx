@@ -43,10 +43,10 @@ function ProductsCategory(props) {
       {props.category == "gaming" ? <HeroGaming /> : <HeroOffice />}
 
       <div className="category-header">
-        <p>
+        <p className="category-header-show">
           Showing {displayProd.length} out of {products.length} products
         </p>
-        <button>Sort by</button>
+        <button className="category-header-btn">Sort by</button>
       </div>
       <div className="category-products">
         {displayProd.map((item, index) => {

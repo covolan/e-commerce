@@ -111,3 +111,29 @@
   display: flex;
   gap: 16px;
 }
+
+@media screen and (max-width: 500px) {
+  #commentTextArea {
+    min-width: 300px;
+    min-height: 200px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .comment-text-area {
+    flex-wrap: wrap;
+  }
+  .comment-text-area-right {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .comment-add-rating {
+    margin: auto;
+  }
+  .text-area-btn-top {
+    border-radius: 0px;
+  }
+
+  .text-area-btn-bottom {
+    border-radius: 0px 0px 8px 8px;
+  }
+}

@@ -1,7 +1,64 @@
+import { IconButton, Menu, MenuItem } from "@mui/material";
 import "./Navbar.css";
 import { NavbarMenuItem } from "./NavbarMenu";
+import { MenuBook } from "@mui/icons-material";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
+  const [menuAnchor, setMenuAnchor] = useState(null);
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const open = Boolean(menuAnchor);
+
+  const handleMenuClick = (event) => {
+    setMenuAnchor(event.currentTarget);
+  };
+
+  const handleCloseMenu = () => {
+    setMenuAnchor(null);
+  };
+
+  return (
+    <div className="navbar">
+      <div className="navbar-content">
+        <p className="navbar-shopName">INFORMATIKA</p>
+        {windowSize.width < 768 ? (
+          <BarMenu
+            open={open}
+            handleCloseMenu={handleCloseMenu}
+            handleMenuClick={handleMenuClick}
+            menuAnchor={menuAnchor}
+          />
+        ) : (
+          <RegularMenu />
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default Navbar;
+
+const RegularMenu = () => {
   const menuOptions = [
     {
       path: "/",
@@ -18,10 +75,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="navbar">
-      <div className="navbar-content">
-
-      <p className="navbar-shopName">INFORMATIKA</p>
+    <>
       <ul className="navbar-menu">
         {menuOptions.map((option, index) => {
           return (
@@ -46,9 +100,54 @@ function Navbar() {
           </NavbarMenuItem.Link>
         </NavbarMenuItem.Root>
       </div>
-      </div>
-    </div>
+    </>
   );
-}
+};
 
-export default Navbar;
+const BarMenu = ({ handleCloseMenu, handleMenuClick, menuAnchor, open }) => {
+  const menuOptions = [
+    {
+      name: "Home",
+      path: "/",
+    },
+    {
+      name: "Gaming",
+      path: "/gaming",
+    },
+    {
+      name: "Office",
+      path: "/office",
+    },
+    {
+      name: "Login",
+      path: "/login",
+    },
+    {
+      name: "Cart",
+      path: "/cart",
+    },
+  ];
+
+  return (
+    <>
+      <IconButton onClick={handleMenuClick}>
+        <MenuIcon />
+      </IconButton>
+      <Menu anchorEl={menuAnchor} open={open} onClose={handleCloseMenu}>
+        {menuOptions.map((item, index) => {
+          return (
+            <Link
+              key={item.path + index}
+              to={item.path}
+              style={{ textDecoration: "inherit", color: "inherit" }}
+            >
+              <MenuItem sx={{ px: 4, py: 1 }} onClick={handleCloseMenu}>
+                {item.name}
+              </MenuItem>
+            </Link>
+          );
+        })}
+      </Menu>
+    </>
+  );
+};

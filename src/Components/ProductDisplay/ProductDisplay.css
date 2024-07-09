@@ -103,6 +103,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .productDisplay-right,
+  .productDisplay-left {
+    min-width: 100px;
+  }
+}
+
 @keyframes slide-in-left {
   0% {
     transform: translateX(-100%) translateY(3%);

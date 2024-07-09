@@ -165,3 +165,34 @@ td {
 .purchase-text {
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .total,
+  .product-td {
+    font-size: 16px;
+  }
+  .product-td {
+    gap: 8px;
+  }
+  .left-btn-qnt,
+  .right-btn-qnt {
+    padding: 8px 8px;
+    margin: 0px;
+  }
+  .product-image {
+    max-width: 36px;
+  }
+  .cancel {
+    width: 16px;
+    margin-left: 8px;
+  }
+  .cart-title {
+    padding: 16px 8px;
+  }
+  th,
+  td {
+    padding: 8px;
+  }
+  table {
+    scale: 95%;
+  }
+}
