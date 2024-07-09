@@ -29,6 +29,11 @@ function ProductDisplay(props) {
     setMainImage(product.image[imageIndex]);
   };
 
+  const handleProduductDescription = (description) => {
+    let tempDescription = description.split("\n");
+    return tempDescription;
+  };
+
   const imageIndexList = [0, 1, 2, 3];
 
   return (
@@ -62,7 +67,20 @@ function ProductDisplay(props) {
         <h1 className="productDisplay-title">{product.productName}</h1>
         <Rating name="rating" value={product.rating} readOnly></Rating>
         <p className="productDisplay-price">${product.price}</p>
-        <p className="productDisplay-description">{product.description}</p>
+        <div className="productDisplay-description">
+          {handleProduductDescription(product.description).map(
+            (item, index) => {
+              return (
+                <p
+                  className="productDisplay-description-text"
+                  key={item[0] + index}
+                >
+                  {item}
+                </p>
+              );
+            }
+          )}
+        </div>
         {popUpBuy}
         <button
           onClick={() => {
