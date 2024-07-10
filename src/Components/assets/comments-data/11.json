@@ -1,0 +1,37 @@
+[
+  {
+    "id": "11comment",
+    "comments": [
+      {
+        "name": "Ethan Roberts",
+        "image": "",
+        "rating": 3,
+        "comment": "The speakers are okay for casual listening. The sound quality is decent but lacks bass. Good enough for basic use."
+      },
+      {
+        "name": "Chloe Harris",
+        "image": "",
+        "rating": 3,
+        "comment": "These speakers are average. They work well for video calls and light music, but they don't excel in any particular area. An acceptable choice for the price."
+      },
+      {
+        "name": "Aiden Clark",
+        "image": "",
+        "rating": 3,
+        "comment": "The sound is clear, but the volume doesn't get very high. They're fine for an office setting but not great for immersive audio experiences."
+      },
+      {
+        "name": "Ella White",
+        "image": "",
+        "rating": 3,
+        "comment": "An adequate set of speakers for the office. The build quality is good, but the audio lacks depth. Overall, they do the job."
+      },
+      {
+        "name": "Lucas Martinez",
+        "image": "",
+        "rating": 2,
+        "comment": "I'm disappointed with these speakers. The sound quality is subpar, and there's noticeable distortion at higher volumes. I wouldn't recommend them."
+      }
+    ]
+  }
+]

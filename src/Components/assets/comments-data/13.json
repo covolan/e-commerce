@@ -1,0 +1,37 @@
+[
+  {
+    "id": "13comment",
+    "comments": [
+      {
+        "name": "David Smith",
+        "image": "",
+        "rating": 5,
+        "comment": "The Fortrek gaming headset is amazing! The sound quality is crystal clear and the bass is powerful. It's perfect for immersive gaming experiences."
+      },
+      {
+        "name": "Emma Thompson",
+        "image": "",
+        "rating": 4,
+        "comment": "Great headset for gaming! The comfort level is top-notch, and the microphone clarity is excellent. Definitely a great value for the price."
+      },
+      {
+        "name": "Lucas Brown",
+        "image": "",
+        "rating": 5,
+        "comment": "I love this Fortrek gaming headset! The surround sound enhances my gameplay, and the build quality feels premium. Highly recommend!"
+      },
+      {
+        "name": "Sophia Garcia",
+        "image": "",
+        "rating": 5,
+        "comment": "This headset exceeded my expectations. The noise-canceling feature is fantastic, and it's super comfortable for long gaming sessions."
+      },
+      {
+        "name": "Noah Martinez",
+        "image": "",
+        "rating": 4,
+        "comment": "Very satisfied with this Fortrek headset. The sound is rich and detailed, and the design is stylish and comfortable. Great for both gaming and music."
+      }
+    ]
+  }
+]

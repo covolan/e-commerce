@@ -1,0 +1,37 @@
+[
+  {
+    "id": "14comment",
+    "comments": [
+      {
+        "name": "Emily Johnson",
+        "image": "",
+        "rating": 5,
+        "comment": "The HyperX gaming keyboard is phenomenal! The mechanical switches are responsive and the RGB lighting is stunning. A must-have for any gamer."
+      },
+      {
+        "name": "Daniel Brown",
+        "image": "",
+        "rating": 5,
+        "comment": "Absolutely love this HyperX keyboard! The build quality is exceptional, and the customizable keys make gaming sessions a breeze. Highly recommended!"
+      },
+      {
+        "name": "Sophia Lee",
+        "image": "",
+        "rating": 5,
+        "comment": "This HyperX gaming keyboard is top-tier! The key feedback is perfect for fast-paced gaming, and the design is sleek. I'm impressed!"
+      },
+      {
+        "name": "Jack Wilson",
+        "image": "",
+        "rating": 5,
+        "comment": "Fantastic gaming keyboard from HyperX! The anti-ghosting feature is great for competitive gaming, and the keys are durable. Worth every penny!"
+      },
+      {
+        "name": "Olivia Martinez",
+        "image": "",
+        "rating": 4,
+        "comment": "Very pleased with this HyperX keyboard. The tactile feel is excellent, and the build quality is solid. A great addition to my gaming setup!"
+      }
+    ]
+  }
+]
