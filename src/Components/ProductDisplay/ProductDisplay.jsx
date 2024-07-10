@@ -91,7 +91,7 @@ function ProductDisplay(props) {
           ADD TO CART
         </button>
       </div>
-      <CommentSection />
+      <CommentSection productID={product.id} />
     </div>
   );
 }

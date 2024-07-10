@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import commentsData from "../assets/comments.json";
 import "./CommentSection.css";
 import { Rating } from "@mui/material";
 import profPicPlaceholder from "../assets/profile-pic.jpg";
+import comments from "../assets/comments-data/comments";
 
-export default function CommentSection() {
+export default function CommentSection({ productID }) {
   const commentAreaRef = useRef(null);
   const [rating, setRating] = useState(0);
   const localStoragedComments = JSON.parse(
@@ -21,7 +21,7 @@ export default function CommentSection() {
     setLocalComments([
       {
         id: Date(),
-        name: "Abu Dhabi",
+        name: "Default user",
         comment: commentAreaRef.current.value,
         rating: rating,
       },
@@ -35,9 +35,10 @@ export default function CommentSection() {
     commentAreaRef.current.value = "";
   };
 
-  const clearLocalStorage = () => {
-    localStorage.clear();
-  };
+  // const clearLocalStorage = () => {
+  //   localStorage.clear();
+  //   window.location.reload();
+  // };
 
   useEffect(() => {
     localStorage.setItem("local-comments-store", JSON.stringify(localComments));
@@ -85,7 +86,7 @@ export default function CommentSection() {
           />
         ))}
 
-      {commentsData.map((comment, index) => (
+      {comments[productID - 1].comments.map((comment, index) => (
         <CommentCard
           name={comment.name}
           image={comment.image}
