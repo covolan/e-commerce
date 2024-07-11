@@ -181,7 +181,7 @@ let productData = [
     productName: "Headset Fortrek",
     price: 199,
     prevPrice: 255,
-    image: [FortrekHeadset1, FortrekHeadset2, FortrekHeadset3, undefined],
+    image: [FortrekHeadset1, FortrekHeadset2, FortrekHeadset3],
     popular: true,
     category: "gaming",
     rating: 5,
