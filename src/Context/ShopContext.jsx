@@ -28,6 +28,10 @@ function ShopContextProvider(props) {
     }));
   };
 
+  const emptyAllCart = () => {
+    setCartItems(getDefaultCart());
+  };
+
   const emptyCartItem = (itemId) => {
     setCartItems((previousVal) => ({ ...previousVal, [itemId]: 0 }));
   };
@@ -39,6 +43,7 @@ function ShopContextProvider(props) {
     addToCart,
     delFromCart,
     emptyCartItem,
+    emptyAllCart,
   };
 
   return (

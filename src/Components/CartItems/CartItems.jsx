@@ -5,8 +5,14 @@ import cancelIcon from "../assets/cancel.svg";
 import { Modal, Box } from "@mui/material";
 
 function CartItems() {
-  const { productData, cartItems, delFromCart, addToCart, emptyCartItem } =
-    useContext(ShopContext);
+  const {
+    productData,
+    cartItems,
+    delFromCart,
+    addToCart,
+    emptyCartItem,
+    emptyAllCart,
+  } = useContext(ShopContext);
   const [totalValue, setTotalValue] = useState(0);
   const [cartTotalItems, setCartTotalItems] = useState(0);
   const [openModal, setOpenModal] = useState(false);
@@ -77,7 +83,12 @@ function CartItems() {
         </Box>
       </Modal>
 
-      <h1 className="cart-title">Your cart Has {cartTotalItems} products</h1>
+      <h1 className="cart-title">
+        Your cart Has {cartTotalItems} products{" "}
+        <button onClick={emptyAllCart} className="cart-btn empty-btn">
+          Clear cart
+        </button>
+      </h1>
       <table>
         <thead>
           <tr>
@@ -156,7 +167,7 @@ function CartItems() {
           </tbody>
         </table>
       </div>
-      <button onClick={handleOpenModal} className="checkout-btn">
+      <button onClick={handleOpenModal} className="checkout-btn cart-btn">
         Check out
       </button>
     </div>

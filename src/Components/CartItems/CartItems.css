@@ -105,6 +105,45 @@ td {
   }
 }
 
+.cart-btn {
+  font-weight: 600;
+  width: fit-content;
+  margin: auto;
+  margin-top: 28px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: fit-content;
+  background-color: hsl(0, 0%, 90%);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.checkout-btn {
+  &:hover {
+    background-color: var(--bluebonnet-shades-80);
+    color: white;
+  }
+
+  &:active {
+    background-color: var(--bluebonnet-shades-60);
+    color: white;
+  }
+}
+
+.empty-btn {
+  font-size: 1rem;
+  &:hover {
+    background-color: hsl(0, 85%, 65%);
+    color: white;
+  }
+
+  &:active {
+    background-color: hsl(0, 85%, 45%);
+    color: white;
+  }
+}
+
 .quantity-content {
   padding: 0px;
   display: flex;
