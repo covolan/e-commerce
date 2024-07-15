@@ -1,7 +1,6 @@
 import { IconButton, Menu, MenuItem } from "@mui/material";
 import "./Navbar.css";
 import { NavbarMenuItem } from "./NavbarMenu";
-import { MenuBook } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
