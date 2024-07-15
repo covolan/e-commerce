@@ -1,7 +1,9 @@
 import React, { createContext, useState } from "react";
-import productData from "../Components/assets/newdata";
+import Data from "../Components/assets/newdata";
 
 export const ShopContext = createContext(null);
+
+const productData = Data;
 
 const getDefaultCart = () => {
   let cart = {};
