@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const firstLinks = ["Contact", "Carrers", "Company", "FAQ", "SAC"];
 const firstLinksGoTo = ["", "", "", "", ""];
-const secondLinks = ["Home", "Gaming", "Office", "Login", "Go to Top"];
+const secondLinks = ["Home", "Gaming", "Office", "Login"];
 const secontLinksGoTo = ["/", "/gaming", "/office", "/login", ""];
 const socialLinks = [instagramLogo, whasappLogo, twitterLogo];
 const goToTop = () => {
@@ -40,6 +40,9 @@ function Footer() {
               <li className="footer-links">{item}</li>
             </Link>
           ))}
+          <li onClick={goToTop} className="footer-links">
+            Go to top
+          </li>
         </ul>
         <ul className="footer-socials">
           {socialLinks.map((item, index) => (
