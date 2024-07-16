@@ -4,7 +4,7 @@ import productData from "../assets/newdata";
 import Item from "../Item/Item";
 
 function Popular() {
-  const CATEGORY = "Office"
+  const CATEGORY = "Office";
 
   return (
     <div className="popular">
@@ -12,13 +12,11 @@ function Popular() {
       <hr />
       <div className="popular-products">
         {productData.map((product, index) => {
-          if (product.category == CATEGORY.toLowerCase()) {
-            return (
-              <Item
-              key={index}
-              product={product}
-              />
-            );
+          if (
+            product.category == CATEGORY.toLowerCase() &&
+            product.popular == true
+          ) {
+            return <Item key={index} product={product} />;
           }
         })}
       </div>
