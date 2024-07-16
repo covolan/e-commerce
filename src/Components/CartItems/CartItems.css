@@ -204,6 +204,7 @@ td {
 .purchase-text {
   text-align: center;
 }
+
 @media screen and (max-width: 768px) {
   .total,
   .product-td {

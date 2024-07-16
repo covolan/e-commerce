@@ -23,6 +23,7 @@ function CartItems() {
 
   const handleCloseModal = () => {
     setOpenModal(false);
+    emptyAllCart();
   };
 
   const modalBoxStyle = {
@@ -30,7 +31,8 @@ function CartItems() {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
+    width: "fitContent",
+    borderRadius: "16px",
     p: 4,
     bgcolor: "background.paper",
   };
@@ -76,7 +78,7 @@ function CartItems() {
     <div className="cart">
       <Modal open={openModal} onClose={handleCloseModal}>
         <Box sx={modalBoxStyle}>
-          <h2 className="purchase-title">Thanks for your purchase!</h2>
+          <h2 className="purchase-title">🎊 Thanks for your purchase! 🎊</h2>
           <p className="purchase-text">
             Feel free to continue exploring our online store
           </p>
