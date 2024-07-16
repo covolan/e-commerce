@@ -611,6 +611,1046 @@ let comments = [
       },
     ],
   },
+  {
+    id: 16,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 17,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 18,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 19,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 20,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 21,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 22,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 23,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 24,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 25,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 26,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 27,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 28,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 29,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 30,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 31,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 32,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 33,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 34,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 35,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 36,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 37,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 38,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 39,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 40,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
+  {
+    id: 41,
+    comments: [
+      {
+        name: "Lucas Silva",
+        image: mp2,
+        rating: 5,
+        comment:
+          "The Intelbras 1080p webcam is fantastic! The video quality is crisp and clear, perfect for video calls and streaming. Highly recommend!",
+      },
+      {
+        name: "Isabella Santos",
+        image: wp3,
+        rating: 5,
+        comment:
+          "Love this Intelbras webcam! The autofocus works flawlessly, and the microphone captures clear audio. Great for remote work and virtual meetings.",
+      },
+      {
+        name: "Pedro Costa",
+        image: mp5,
+        rating: 5,
+        comment:
+          "Impressed with the Intelbras 1080p webcam! The wide-angle lens is great for group calls, and the setup was easy. A must-have for home office setups.",
+      },
+      {
+        name: "Juliana Oliveira",
+        image: wp4,
+        rating: 5,
+        comment:
+          "This Intelbras webcam exceeded my expectations. The image quality is sharp even in low light conditions, and the software is user-friendly.",
+      },
+      {
+        name: "Felipe Almeida",
+        image: mp3,
+        rating: 4,
+        comment:
+          "Very satisfied with this Intelbras webcam. The video is clear and the microphone is decent. A reliable choice for online communication.",
+      },
+    ],
+  },
 ];
 
 export default comments;

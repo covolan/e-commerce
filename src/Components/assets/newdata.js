@@ -1,35 +1,36 @@
-import mouseImg1 from "./logitech-mouse1.jpg";
-import mouseImg2 from "./logitech-mouse2.jpg";
-import mouseImg3 from "./logitech-mouse3.jpg";
-import mouseImg4 from "./logitech-mouse4.jpg";
-import MSMouse1 from "./microsoft-mouse1.jpg";
-import MSMouse2 from "./microsoft-mouse2.jpg";
-import MSMouse3 from "./microsoft-mouse3.jpg";
-import MSMouse4 from "./microsoft-mouse4.jpg";
-import KeyboardMulti1 from "./teclado-multi1.jpg";
-import KeyboardMulti2 from "./teclado-multi2.jpg";
-import KeyboardMulti3 from "./teclado-multi3.jpg";
-import KeyboardLogi1 from "./logitech-keyboard1.jpg";
-import KeyboardLogi2 from "./logitech-keyboard2.jpg";
-import KeyboardLogi3 from "./logitech-keyboard3.jpg";
-import KeyboardLogi4 from "./logitech-keyboard4.jpg";
-import SoundBoxMulti1 from "./sound-box1.jpg";
-import SoundBoxMulti2 from "./sound-box2.jpg";
-import SoundBoxMulti3 from "./sound-box3.jpg";
-import Screen4k1 from "./screen1.jpg";
-import Screen4k2 from "./screen2.jpg";
-import Screen4k3 from "./screen3.jpg";
-import Screen4k4 from "./screen4.jpg";
-import FortrekHeadset1 from "./fortrek-headphone1.jpg";
-import FortrekHeadset2 from "./fortrek-headphone2.jpg";
-import FortrekHeadset3 from "./fortrek-headphone3.jpg";
-import KBDHyperx1 from "./keyboard-hyperx1.jpg";
-import KBDHyperx2 from "./keyboard-hyperx2.jpg";
-import KBDHyperx3 from "./keyboard-hyperx3.jpg";
-import KBDHyperx4 from "./keyboard-hyperx4.jpg";
-import IntelWebcam1 from "./intelbras-webcam1.jpg";
-import IntelWebcam2 from "./intelbras-webcam2.jpg";
-import IntelWebcam3 from "./intelbras-webcam3.jpg";
+import mouseImg1 from "./images/logitech-mouse1.jpg";
+import mouseImg2 from "./images/logitech-mouse2.jpg";
+import mouseImg3 from "./images/logitech-mouse3.jpg";
+import mouseImg4 from "./images/logitech-mouse4.jpg";
+import MSMouse1 from "./images/microsoft-mouse1.jpg";
+import MSMouse2 from "./images/microsoft-mouse2.jpg";
+import MSMouse3 from "./images/microsoft-mouse3.jpg";
+import MSMouse4 from "./images/microsoft-mouse4.jpg";
+import KeyboardMulti1 from "./images/teclado-multi1.jpg";
+import KeyboardMulti2 from "./images/teclado-multi2.jpg";
+import KeyboardMulti3 from "./images/teclado-multi3.jpg";
+import KeyboardLogi1 from "./images/logitech-keyboard1.jpg";
+import KeyboardLogi2 from "./images/logitech-keyboard2.jpg";
+import KeyboardLogi3 from "./images/logitech-keyboard3.jpg";
+import KeyboardLogi4 from "./images/logitech-keyboard4.jpg";
+import SoundBoxMulti1 from "./images/sound-box1.jpg";
+import SoundBoxMulti2 from "./images/sound-box2.jpg";
+import SoundBoxMulti3 from "./images/sound-box3.jpg";
+import Screen4k1 from "./images/screen1.jpg";
+import Screen4k2 from "./images/screen2.jpg";
+import Screen4k3 from "./images/screen3.jpg";
+import Screen4k4 from "./images/screen4.jpg";
+import FortrekHeadset1 from "./images/fortrek-headphone1.jpg";
+import FortrekHeadset2 from "./images/fortrek-headphone2.jpg";
+import FortrekHeadset3 from "./images/fortrek-headphone3.jpg";
+import KBDHyperx1 from "./images/keyboard-hyperx1.jpg";
+import KBDHyperx2 from "./images/keyboard-hyperx2.jpg";
+import KBDHyperx3 from "./images/keyboard-hyperx3.jpg";
+import KBDHyperx4 from "./images/keyboard-hyperx4.jpg";
+import IntelWebcam1 from "./images/intelbras-webcam1.jpg";
+import IntelWebcam2 from "./images/intelbras-webcam2.jpg";
+import IntelWebcam3 from "./images/intelbras-webcam3.jpg";
+import Placeholder from "./images/placeholder.jpg";
 
 let productData = [
   {
@@ -212,6 +213,318 @@ let productData = [
     rating: 5,
     description:
       "Experience high-quality visuals with Full HD (1080p) resolution. The CAM 1080p delivers sharper videos and more vibrant colors with processed and balanced images. Beamforming Audio Technology This advanced technology focuses audio capture on the focal point, providing clearer sound with less environmental interference.\n Enhanced Security with Privacy Shutter Ensure your privacy with a built-in privacy shutter that covers the lens when the camera is not in use. Additionally, an LED indicator shows when the camera is active. Flexibility and Performance The CAM 1080p is compatible with videoconferencing apps and can be easily mounted on a tripod.\n It also features a 360º horizontal and 90° vertical adjustable mount, along with a 2.1 m independent USB cable for optimal positioning and convenience. Elevate your audiovisual experience with the CAM 1080p, designed for superior video quality and secure, clear audio.",
+  },
+  {
+    id: 16,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 17,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 18,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 19,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 20,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 21,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 22,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 23,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 24,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 25,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 26,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 27,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 28,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "gaming",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 29,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 30,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 31,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 32,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 33,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 34,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 35,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 36,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 37,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 38,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 39,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 40,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
+  },
+  {
+    id: 41,
+    productName: "Placeholder Item",
+    price: 1,
+    prevPrice: 0,
+    image: [Placeholder, Placeholder, Placeholder, Placeholder],
+    popular: false,
+    category: "office",
+    rating: 4,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum justo id neque sodales, nec rhoncus velit consectetur. Integer et ex magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur facilisis dui, eu finibus mauris malesuada quis.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat elementum elementum. Donec nisl felis, eleifend eget quam sit amet, porttitor tincidunt sem. Curabitur vulputate est volutpat ante hendrerit interdum. Mauris ullamcorper varius ullamcorper. Integer dapibus fermentum mi sit amet feugiat.\n In dictum nec felis id euismod. Nullam eleifend placerat urna, sit amet tincidunt tortor laoreet vitae. Donec in urna nec tortor sagittis cursus at sed magna. Nam id tellus id elit bibendum sollicitudin. In porttitor enim ante, id imperdiet libero pellentesque eget.",
   },
 ];
 

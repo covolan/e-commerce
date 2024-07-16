@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./CommentSection.css";
 import { Rating } from "@mui/material";
-import profPicPlaceholder from "../assets/profile-pic.jpg";
 import comments from "../assets/comments-data/comments";
 
 export default function CommentSection({ productID }) {
@@ -86,15 +85,16 @@ export default function CommentSection({ productID }) {
           />
         ))}
 
-      {comments[productID - 1].comments.map((comment, index) => (
-        <CommentCard
-          name={comment.name}
-          image={comment.image}
-          comment={comment.comment}
-          key={comment.name + index}
-          rating={comment.rating}
-        />
-      ))}
+      {productID &&
+        comments[productID - 1].comments.map((comment, index) => (
+          <CommentCard
+            name={comment.name}
+            image={comment.image}
+            comment={comment.comment}
+            key={comment.name + index}
+            rating={comment.rating}
+          />
+        ))}
     </div>
   );
 }

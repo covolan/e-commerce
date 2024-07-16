@@ -19,7 +19,7 @@ function ProductsCategory(props) {
   const [menuAnchor, setMenuAnchor] = useState(null);
 
   // Constants
-  const PRODUCTS_PER_PAGE = 4;
+  const PRODUCTS_PER_PAGE = 8;
   const QUANTITY_OF_PAGES = Math.ceil(products.length / PRODUCTS_PER_PAGE);
   const open = Boolean(menuAnchor);
 
