@@ -88,7 +88,7 @@ const RegularMenu = () => {
       </ul>
       <div className="navbar-loginAndCart">
         <NavbarMenuItem.Root>
-          <NavbarMenuItem.Link path={"/login"}>
+          <NavbarMenuItem.Link path={"/signup"}>
             <NavbarMenuItem.Login />
           </NavbarMenuItem.Link>
         </NavbarMenuItem.Root>

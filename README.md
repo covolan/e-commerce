@@ -20,6 +20,8 @@ Neste projeto, foram aplicados desde conceitos básicos de JavaScript até conce
 
 Os conceitos de React.js utilizados foram: composição de componentes, hooks como useState, useEffect e useContext, utilização de context e context provider, React Router, Link para navegação entre páginas, renderização condicional de componentes, uso da biblioteca de componentes Material-UI e personalização desses componentes, manipulação de propriedades da janela (window) e interação entre componentes pai e filho. Também foram aplicados conceitos básicos e intermediários de CSS3.
 
+Neste projeto, também foi utilizado o conceito de local storage para armazenar dados persistentes.
+
 ## Utilização
 
 Para utilizar o aplicativo, comece clonando o repositório da forma que preferir. Dentro do diretório do repositório, com o terminal aberto no caminho _/e-commerce_, execute o comando:
@@ -55,6 +57,8 @@ To utilize the concepts learned so far and improve them to complete a major proj
 In this project, concepts ranging from basic JavaScript to intermediate React.js were applied. Some JavaScript concepts used include Array methods such as .map(), .filter(), .find(), .slice(), and .split(), as well as the spread operator ("..."). String methods, object construction and deconstruction, and importing libraries and files were also used.
 
 The React.js concepts used were: component composition, hooks like useState, useEffect, and useContext, the use of context and context provider, React Router, Link for navigation between pages, conditional component rendering, the use of the Material-UI component library and customization of these components, manipulation of window properties, and interaction between parent and child components. Basic and intermediate CSS3 concepts were also applied.
+
+In this project, the concept of local storage was also used to store persistent data.
 
 ## Usage:
 

@@ -5,7 +5,7 @@ import Home from "./Pages/Home";
 import ProductsCategory from "./Pages/ProductsCategory";
 import Product from "./Pages/Product";
 import Cart from "./Pages/Cart";
-import LoginSignup from "./Pages/LoginSignup";
+import SignUp from "./Pages/SignUp";
 import Footer from "./Components/Footer/Footer";
 import MenuProvider from "./Context/MenuContext";
 
@@ -29,7 +29,7 @@ function App() {
               element={<ProductsCategory category="office" />}
             />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/login" element={<LoginSignup />} />
+            <Route path="/signup" element={<SignUp />} />
           </Routes>
           <Footer />
         </BrowserRouter>
