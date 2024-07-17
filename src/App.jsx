@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -11,8 +10,6 @@ import Footer from "./Components/Footer/Footer";
 import MenuProvider from "./Context/MenuContext";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <MenuProvider>
