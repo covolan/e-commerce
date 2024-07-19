@@ -1,0 +1,44 @@
+.login-comp-title {
+  text-align: center;
+  margin: 2rem;
+}
+.acc-opt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 50%;
+  margin: 1rem auto;
+  background-color: var(--bluebonnet-tints-80);
+  border-radius: 12px;
+  padding: 0px 0px 0px 16px;
+}
+
+.avatar-acc {
+  width: 60px;
+  border-radius: 50%;
+  margin: 8px;
+}
+
+.info-acc-text {
+  font-weight: 500;
+}
+
+.change-btn {
+  padding: 10px 16px;
+  margin: 16px;
+  &:hover {
+    background-color: var(--bluebonnet-shades-80);
+    color: white;
+  }
+}
+
+.red-btn {
+  &:hover {
+    background-color: hsl(0, 80%, 70%);
+    color: black;
+  }
+}
+
+.center-opt {
+  justify-content: center;
+}

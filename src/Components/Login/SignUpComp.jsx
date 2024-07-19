@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Alert } from "@mui/material";
-import "./SignUp.css";
+import "./SignUpComp.css";
 import LoginComp from "./LoginComp";
+import avatar from "../assets/avatar-placeholder.png";
 
 export default function SignUp() {
   const formRef = useRef(null);
@@ -23,6 +24,7 @@ export default function SignUp() {
         email: data.email,
         password: data.password,
         login: true,
+        img: avatar,
       },
       ...localUsers,
     ]);
@@ -70,10 +72,8 @@ export default function SignUp() {
     window.location.reload();
   };
 
-  // clearLocalStorage();
-
-  if (!IsLoggedIn(localUsers)) {
-    return <LoginComp />;
+  if (IsLoggedIn(localUsers)) {
+    return <LoginComp localUsers={localUsers} setLocalUsers={setLocalUsers} />;
   }
 
   return (
@@ -124,6 +124,7 @@ export default function SignUp() {
           <p>By continuing, i agree to the terms of use & privacy policy.</p>
         </div>
       </form>
+      <button onClick={clearLocalStorage}> clear local storage</button>
     </div>
   );
 }
