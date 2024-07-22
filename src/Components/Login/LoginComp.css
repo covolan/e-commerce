@@ -12,7 +12,15 @@
   border-radius: 12px;
   padding: 0px 0px 0px 16px;
 }
-
+.change-field-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#changename {
+  padding: 8px;
+}
 .avatar-acc {
   width: 60px;
   border-radius: 50%;
