@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Alert } from "@mui/material";
 import "./SignUpComp.css";
-import LoginComp from "./LoginComp";
+import UserPage from "./UserPage";
 import avatar from "../assets/avatar-placeholder.png";
+import LoginPage from "./LoginPage";
 
 export default function SignUp() {
   const formRef = useRef(null);
@@ -72,8 +73,9 @@ export default function SignUp() {
     window.location.reload();
   };
 
+  return <LoginPage />;
   if (IsLoggedIn(localUsers)) {
-    return <LoginComp localUsers={localUsers} setLocalUsers={setLocalUsers} />;
+    return <UserPage localUsers={localUsers} setLocalUsers={setLocalUsers} />;
   }
 
   return (

@@ -1,0 +1,28 @@
+.login-user-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 4rem auto;
+}
+.login-user-label {
+  margin-top: 1rem;
+}
+.login-user-input {
+  padding: 18px 12px;
+  border: none;
+
+  border: 1px solid hsl(0, 0%, 65%);
+  &:focus {
+    outline: 1px solid;
+  }
+}
+.login-user-input:last-of-type {
+  margin-bottom: 1rem;
+}
+.login-user-btn {
+  margin: auto;
+  &:hover,
+  :active {
+    background-color: hsl(0, 0%, 85%);
+  }
+}

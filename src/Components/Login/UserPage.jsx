@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./LoginComp.css";
+import "./UserPage.css";
 
-export default function LoginComp({ localUsers, setLocalUsers }) {
+export default function UserPage({ localUsers, setLocalUsers }) {
   const clearLocalStorage = () => {
     localStorage.clear();
     window.location.reload();
