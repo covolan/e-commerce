@@ -8,11 +8,17 @@ import LoginPage from "./LoginPage";
 export default function SignUp() {
   const formRef = useRef(null);
   const localStorageUsers = JSON.parse(localStorage.getItem("users"));
+  const localLoginPage = JSON.parse(localStorage.getItem("loginPage"));
   const [localUsers, setLocalUsers] = useState(() => {
     if (localStorageUsers == null) {
       return [];
     }
     return localStorageUsers;
+  });
+  // Sim.. Isso é uma gambiarra.
+  const [loginPage, setLoginPage] = useState(() => {
+    if (localLoginPage == null) return [];
+    return localLoginPage;
   });
 
   const addUser = (data) => {
@@ -42,6 +48,21 @@ export default function SignUp() {
     return userLoggedIn;
   };
 
+  const isPageLogin = () => {
+    if (loginPage.length > 0 && loginPage[0].login) {
+      return true;
+    }
+    return false;
+  };
+
+  const goToLogin = () => {
+    setLoginPage([
+      {
+        login: true,
+      },
+    ]);
+  };
+
   const searchUser = (currData) => {
     let hasUser = false;
 
@@ -64,6 +85,10 @@ export default function SignUp() {
   };
 
   useEffect(() => {
+    localStorage.setItem("loginPage", JSON.stringify(loginPage));
+  }, [loginPage]);
+
+  useEffect(() => {
     localStorage.setItem("users", JSON.stringify(localUsers));
     console.log(localUsers);
   }, [localUsers]);
@@ -72,9 +97,16 @@ export default function SignUp() {
     localStorage.clear();
     window.location.reload();
   };
-
-  return <LoginPage />;
-  if (IsLoggedIn(localUsers)) {
+  if (isPageLogin()) {
+    return (
+      <LoginPage
+        localUsers={localUsers}
+        setLoginPage={setLoginPage}
+        setLocalUsers={setLocalUsers}
+      />
+    );
+  }
+  if (IsLoggedIn()) {
     return <UserPage localUsers={localUsers} setLocalUsers={setLocalUsers} />;
   }
 
@@ -118,7 +150,9 @@ export default function SignUp() {
         <button className="continue-btn">continue</button>
         <p className="loginSignUp-login">
           Already have and account?{" "}
-          <button className="login-here-btn">Login here</button>
+          <button onClick={goToLogin} className="login-here-btn">
+            Login here
+          </button>
         </p>
 
         <div className="loginSignUp-terms">
