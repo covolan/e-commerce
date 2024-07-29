@@ -15,12 +15,32 @@ export default function CommentSection({ productID }) {
     }
     return localStoragedComments;
   });
+  const localStorageUsers = JSON.parse(localStorage.getItem("users"));
+  const [localUsers, setLocalUsers] = useState(() => {
+    if (localStorageUsers == null) {
+      return [];
+    }
+    return localStorageUsers;
+  });
+
+  const getUserInfo = (info) => {
+    let tempLocalUsers = localUsers.filter((user) => user.login);
+
+    switch (info) {
+      case "name":
+        return tempLocalUsers[0].name;
+      case "image":
+        return tempLocalUsers[0].img;
+    }
+  };
 
   const addComment = () => {
     setLocalComments([
       {
         id: Date(),
-        name: "Default user",
+        productID: productID,
+        name: getUserInfo("name"),
+        image: getUserInfo("image"),
         comment: commentAreaRef.current.value,
         rating: rating,
       },
@@ -34,56 +54,76 @@ export default function CommentSection({ productID }) {
     commentAreaRef.current.value = "";
   };
 
-  // const clearLocalStorage = () => {
-  //   localStorage.clear();
-  //   window.location.reload();
-  // };
+  const IsLoggedIn = () => {
+    let userLoggedIn = false;
+
+    localUsers.map((item) => {
+      if (item.login) {
+        userLoggedIn = true;
+      }
+    });
+    return userLoggedIn;
+  };
+
+  const clearLocalStorage = () => {
+    localStorage.clear();
+    window.location.reload();
+  };
 
   useEffect(() => {
     localStorage.setItem("local-comments-store", JSON.stringify(localComments));
   }, [localComments]);
+
+  useEffect(() => {
+    localStorage.setItem("users", JSON.stringify(localUsers));
+  }, [localUsers]);
 
   return (
     <div className="comment-section">
       <h1 className="comment-title">Comments</h1>
       <hr className="title-bar" />
 
-      {/* <button onClick={clearLocalStorage}>Clear local storage</button> */}
-
-      <div className="comment-text-area">
-        <textarea
-          ref={commentAreaRef}
-          name="comment"
-          id="commentTextArea"
-        ></textarea>
-        <div className="comment-text-area-right">
-          <Rating
-            className="comment-add-rating"
-            value={rating}
-            onChange={(event, value) => {
-              setRating(value);
-            }}
-            sx={{ p: 2 }}
-          />
-          <button onClick={clearComment} className="text-area-btn-top">
-            clear
-          </button>
-          <button onClick={addComment} className="text-area-btn-bottom">
-            add comment
-          </button>
+      <button onClick={clearLocalStorage}>Clear local storage</button>
+      {!IsLoggedIn() ? null : (
+        <div className="comment-text-area">
+          <textarea
+            ref={commentAreaRef}
+            name="comment"
+            id="commentTextArea"
+          ></textarea>
+          <div className="comment-text-area-right">
+            <Rating
+              className="comment-add-rating"
+              value={rating}
+              onChange={(event, value) => {
+                setRating(value);
+              }}
+              sx={{ p: 2 }}
+            />
+            <button onClick={clearComment} className="text-area-btn-top">
+              clear
+            </button>
+            <button onClick={addComment} className="text-area-btn-bottom">
+              add comment
+            </button>
+          </div>
         </div>
-      </div>
+      )}
 
       {localComments &&
-        localComments.map((comment, index) => (
-          <CommentCard
-            name={comment.name}
-            image={profPicPlaceholder}
-            comment={comment.comment}
-            key={comment.name + index}
-            rating={comment.rating}
-          />
-        ))}
+        localComments.map((comment, index) => {
+          if (comment.productID == productID) {
+            return (
+              <CommentCard
+                name={comment.name}
+                image={comment.image}
+                comment={comment.comment}
+                key={comment.name + index}
+                rating={comment.rating}
+              />
+            );
+          }
+        })}
 
       {productID &&
         comments[productID - 1].comments.map((comment, index) => (
