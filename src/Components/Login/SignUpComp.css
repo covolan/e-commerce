@@ -24,7 +24,13 @@
     }
   }
 }
-
+.login-user-sign-up {
+  margin: 1rem auto;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: hsl(0, 0%, 85%);
+  }
+}
 .continue-btn {
   cursor: pointer;
   margin: 16px auto;

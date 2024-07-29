@@ -7,8 +7,8 @@ import LoginPage from "./LoginPage";
 
 export default function SignUp() {
   const formRef = useRef(null);
-  const localStorageUsers = JSON.parse(localStorage.getItem("users"));
   const localLoginPage = JSON.parse(localStorage.getItem("loginPage"));
+  const localStorageUsers = JSON.parse(localStorage.getItem("users"));
   const [localUsers, setLocalUsers] = useState(() => {
     if (localStorageUsers == null) {
       return [];
@@ -55,7 +55,8 @@ export default function SignUp() {
     return false;
   };
 
-  const goToLogin = () => {
+  const goToLogin = (event) => {
+    event.preventDefault();
     setLoginPage([
       {
         login: true,
@@ -85,12 +86,19 @@ export default function SignUp() {
   };
 
   useEffect(() => {
+    setLoginPage([
+      {
+        login: false,
+      },
+    ]);
+  }, []);
+
+  useEffect(() => {
     localStorage.setItem("loginPage", JSON.stringify(loginPage));
   }, [loginPage]);
 
   useEffect(() => {
     localStorage.setItem("users", JSON.stringify(localUsers));
-    console.log(localUsers);
   }, [localUsers]);
 
   const clearLocalStorage = () => {
