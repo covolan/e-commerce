@@ -83,7 +83,7 @@ export default function CommentSection({ productID }) {
       <h1 className="comment-title">Comments</h1>
       <hr className="title-bar" />
 
-      <button onClick={clearLocalStorage}>Clear local storage</button>
+      {/* <button onClick={clearLocalStorage}>Clear local storage</button> */}
       {!IsLoggedIn() ? null : (
         <div className="comment-text-area">
           <textarea

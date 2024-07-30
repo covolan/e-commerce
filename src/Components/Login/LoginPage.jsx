@@ -51,15 +51,16 @@ export default function LoginPage({ localUsers, setLocalUsers, setLoginPage }) {
     <form action="" onSubmit={searchUser} className="login-user-form">
       {invalidPwd && <Alert severity="error">Invalid Password!</Alert>}
       {invalidEmail && <Alert severity="error">Invalid Email!</Alert>}
+      <h1 className="login-page-title">Login</h1>
       <label className="login-user-label" htmlFor="loginUser">
-        User Name
+        Email
       </label>
       <input
         className="login-user-input"
         type="text"
         name="loginUser"
         id="loginUser"
-        placeholder="Your Username"
+        placeholder="your_email@example.com"
       />
 
       <label className="login-user-label" htmlFor="userPassword">

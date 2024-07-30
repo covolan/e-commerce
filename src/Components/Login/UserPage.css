@@ -12,6 +12,10 @@
   border-radius: 12px;
   padding: 0px 0px 0px 16px;
 }
+.user-invalid-alert {
+  max-width: 400px;
+  margin: auto;
+}
 .change-field-component {
   display: flex;
   align-items: center;

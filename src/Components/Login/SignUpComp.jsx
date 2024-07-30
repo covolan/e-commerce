@@ -20,6 +20,8 @@ export default function SignUp() {
     if (localLoginPage == null) return [];
     return localLoginPage;
   });
+  const [invalidEmail, setInvalidEmail] = useState(false);
+  const [invalidUser, setInvalidUser] = useState(false);
 
   const addUser = (data) => {
     if (searchUser(data)) return;
@@ -68,8 +70,14 @@ export default function SignUp() {
     let hasUser = false;
 
     localUsers.map((item) => {
-      if (currData.email == item.email && currData.name == item.name) {
+      if (currData.name == item.name) {
         hasUser = true;
+        setInvalidUser(true);
+        setInvalidEmail(false);
+      } else if (currData.email == item.email) {
+        hasUser = true;
+        setInvalidEmail(true);
+        setInvalidUser(false);
       }
     });
     return hasUser;
@@ -86,6 +94,8 @@ export default function SignUp() {
   };
 
   useEffect(() => {
+    setInvalidEmail(false);
+    setInvalidUser(false);
     setLoginPage([
       {
         login: false,
@@ -105,6 +115,7 @@ export default function SignUp() {
     localStorage.clear();
     window.location.reload();
   };
+
   if (isPageLogin()) {
     return (
       <LoginPage
@@ -124,6 +135,12 @@ export default function SignUp() {
         This page stores your data in localStorage, DO NOT USE YOUR REAL
         PASSWORD
       </Alert>
+      {invalidUser && (
+        <Alert severity="error">Invalid User or Already taken</Alert>
+      )}
+      {invalidEmail && (
+        <Alert severity="error">Invalid Email or Already registered</Alert>
+      )}
 
       <h1>Sign Up</h1>
 
@@ -155,18 +172,21 @@ export default function SignUp() {
         </label>
         <input type="password" required name="password" id="password" />
 
-        <button className="continue-btn">continue</button>
+        <div className="loginSignUp-terms">
+          <input type="checkbox" required name="terms-checkbox" id="terms" />
+          <p>By continuing, i agree to the terms of use & privacy policy.</p>
+        </div>
+
+        <button type="submit" className="continue-btn">
+          continue
+        </button>
+
         <p className="loginSignUp-login">
           Already have and account?{" "}
           <button onClick={goToLogin} className="login-here-btn">
             Login here
           </button>
         </p>
-
-        <div className="loginSignUp-terms">
-          <input type="checkbox" required name="terms-checkbox" id="terms" />
-          <p>By continuing, i agree to the terms of use & privacy policy.</p>
-        </div>
       </form>
       <button onClick={clearLocalStorage}> clear local storage</button>
     </div>

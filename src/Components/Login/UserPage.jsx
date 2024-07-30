@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./UserPage.css";
+import { Alert } from "@mui/material";
 
 export default function UserPage({ localUsers, setLocalUsers }) {
   const clearLocalStorage = () => {
@@ -11,44 +12,88 @@ export default function UserPage({ localUsers, setLocalUsers }) {
   const [emailField, setEmailField] = useState(false);
   const [pwdField, setPwdField] = useState(false);
   const [avatarField, setAvatarField] = useState(false);
+  const [invalidField, setInvalidField] = useState(false);
+
+  const currUser = localUsers.filter((user) => user.login);
 
   const [name, email, img] = [
-    localUsers[0].name,
-    localUsers[0].email,
-    localUsers[0].img,
+    currUser[0].name,
+    currUser[0].email,
+    currUser[0].img,
   ];
+  const invalidChecker = (option, arg) => {
+    if (arg == null) {
+      return true;
+    }
+    if (arg.trim() === "") {
+      return true;
+    }
 
-  const handleChangeName = (newName) => {
+    let tmpUsers = localUsers.filter((user) => user.email != email);
+    let valReturn = false;
+    tmpUsers.map((user) => {
+      if (user[option] == arg) {
+        valReturn = true;
+      }
+    });
+
+    return valReturn;
+  };
+
+  const alertHandler = () => {
+    setInvalidField(() => true);
+    setTimeout(() => {
+      setInvalidField(false);
+    }, 3000);
+  };
+
+  const handleChangeName = (event, newName) => {
+    event.preventDefault();
+    if (invalidChecker("name", newName)) {
+      alertHandler();
+      return;
+    }
     let tempLocalUsers = localUsers.filter((user) => user.name != name);
     let currentUser = localUsers.filter((user) => user.name == name);
     currentUser = currentUser[0];
     currentUser.name = newName;
     tempLocalUsers.push(currentUser);
     setLocalUsers(tempLocalUsers);
+    setNameField(false);
   };
-  const handleChangeEmail = (newEmail) => {
+  const handleChangeEmail = (event, newEmail) => {
+    event.preventDefault();
+    if (invalidChecker("email", newEmail)) {
+      alertHandler();
+      return;
+    }
     let tempLocalUsers = localUsers.filter((user) => user.email != email);
     let currentUser = localUsers.filter((user) => user.email == email);
     currentUser = currentUser[0];
     currentUser.email = newEmail;
     tempLocalUsers.push(currentUser);
     setLocalUsers(tempLocalUsers);
+    setEmailField(false);
   };
-  const handleChangePassword = (newPassword) => {
+  const handleChangePassword = (event, newPassword) => {
+    event.preventDefault();
     let tempLocalUsers = localUsers.filter((user) => user.email != email);
     let currentUser = localUsers.filter((user) => user.email == email);
     currentUser = currentUser[0];
     currentUser.password = newPassword;
     tempLocalUsers.push(currentUser);
     setLocalUsers(tempLocalUsers);
+    setPwdField(false);
   };
-  const handleChangePicture = (newImg) => {
+  const handleChangePicture = (event, newImg) => {
+    event.preventDefault();
     let tempLocalUsers = localUsers.filter((user) => user.email != email);
     let currentUser = localUsers.filter((user) => user.email == email);
     currentUser = currentUser[0];
     currentUser.img = newImg;
     tempLocalUsers.push(currentUser);
     setLocalUsers(tempLocalUsers);
+    setAvatarField(false);
   };
   const fieldChanger = (field) => {
     switch (field) {
@@ -81,6 +126,11 @@ export default function UserPage({ localUsers, setLocalUsers }) {
     <div className="login-comp">
       <h1 className="login-comp-title">{name} You are logged In</h1>
       <div className="account-options">
+        {invalidField && (
+          <Alert className="user-invalid-alert" severity="error">
+            Invalid Field, please check again!
+          </Alert>
+        )}
         <div className="acc-opt">
           {nameField ? (
             <ChangeField
@@ -195,8 +245,8 @@ const ChangeField = ({ option, handleChange, placeholder, secureField }) => {
       />
       <div className="action-btns">
         <button
-          onClick={() => {
-            handleChange(currInputData);
+          onClick={(event) => {
+            handleChange(event, currInputData);
           }}
           className="change-btn field-change-btn"
         >

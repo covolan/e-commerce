@@ -6,6 +6,11 @@
 }
 .login-user-label {
   margin-top: 1rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.login-page-title {
+  text-align: center;
 }
 .login-user-input {
   padding: 18px 12px;
