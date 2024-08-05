@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 50%;
+  max-width: 65%;
   margin: 1rem auto;
   background-color: var(--bluebonnet-tints-80);
   border-radius: 12px;
@@ -22,9 +22,11 @@
   justify-content: space-between;
   width: 100%;
 }
-#changename {
+
+.fieldInput {
   padding: 8px;
 }
+
 .avatar-acc {
   width: 60px;
   border-radius: 50%;
@@ -53,4 +55,16 @@
 
 .center-opt {
   justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .acc-opt {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .change-btn {
+    margin: 8px;
+  }
 }

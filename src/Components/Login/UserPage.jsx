@@ -95,6 +95,13 @@ export default function UserPage({ localUsers, setLocalUsers }) {
     setLocalUsers(tempLocalUsers);
     setAvatarField(false);
   };
+  const cancelInput = (event) => {
+    event.preventDefault();
+    setAvatarField(false);
+    setNameField(false);
+    setPwdField(false);
+    setEmailField(false);
+  };
   const fieldChanger = (field) => {
     switch (field) {
       case "name":
@@ -138,6 +145,7 @@ export default function UserPage({ localUsers, setLocalUsers }) {
               handleChange={handleChangeName}
               option={"name"}
               secureField={false}
+              cancelInput={cancelInput}
             />
           ) : (
             <>
@@ -160,6 +168,7 @@ export default function UserPage({ localUsers, setLocalUsers }) {
               handleChange={handleChangeEmail}
               option={"email"}
               secureField={false}
+              cancelInput={cancelInput}
             />
           ) : (
             <>
@@ -182,6 +191,7 @@ export default function UserPage({ localUsers, setLocalUsers }) {
               option={"password"}
               secureField={true}
               placeholder={null}
+              cancelInput={cancelInput}
             />
           ) : (
             <>
@@ -204,6 +214,7 @@ export default function UserPage({ localUsers, setLocalUsers }) {
               option={"picture"}
               secureField={false}
               placeholder={null}
+              cancelInput={cancelInput}
             />
           ) : (
             <>
@@ -230,7 +241,13 @@ export default function UserPage({ localUsers, setLocalUsers }) {
   );
 }
 
-const ChangeField = ({ option, handleChange, placeholder, secureField }) => {
+const ChangeField = ({
+  option,
+  handleChange,
+  placeholder,
+  secureField,
+  cancelInput,
+}) => {
   const [currInputData, setCurrInputData] = useState(null);
   return (
     <form className="change-field-component" action="">
@@ -242,6 +259,7 @@ const ChangeField = ({ option, handleChange, placeholder, secureField }) => {
         name={"change" + option}
         id={"change" + option}
         placeholder={secureField ? null : placeholder}
+        className="fieldInput"
       />
       <div className="action-btns">
         <button
@@ -252,7 +270,9 @@ const ChangeField = ({ option, handleChange, placeholder, secureField }) => {
         >
           confirm
         </button>
-        <button className="change-btn red-btn">cancel</button>
+        <button onClick={cancelInput} className="change-btn red-btn">
+          cancel
+        </button>
       </div>
     </form>
   );

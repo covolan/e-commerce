@@ -3,6 +3,7 @@
   flex-direction: column;
   max-width: 500px;
   margin: 4rem auto;
+  padding: 16px;
 }
 .login-user-label {
   margin-top: 1rem;

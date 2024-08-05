@@ -8,7 +8,9 @@ import LoginPage from "./LoginPage";
 export default function SignUp() {
   const formRef = useRef(null);
   const localLoginPage = JSON.parse(localStorage.getItem("loginPage"));
-  const localStorageUsers = JSON.parse(localStorage.getItem("users"));
+  const localStorageUsers = JSON.parse(
+    localStorage.getItem("usersInformatika")
+  );
   const [localUsers, setLocalUsers] = useState(() => {
     if (localStorageUsers == null) {
       return [];
