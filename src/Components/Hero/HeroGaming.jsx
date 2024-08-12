@@ -8,7 +8,7 @@ export default function HeroGaming() {
 
   return (
     <HComp.Root heroBg={"hero-gaming-bg"}>
-      <Link to={"/product/14"}>
+      <Link to={"/e-commerce/product/14"}>
         <HComp.Right
           imgSrc={heroImageItem}
           bgDivClassName={"blob-div-gaming"}
@@ -39,7 +39,7 @@ export default function HeroGaming() {
         </HComp.Description>
 
         <HComp.BuySection>
-          <Link to={"/product/14"}>
+          <Link to={"/e-commerce/product/14"}>
             <HComp.Button color={"btn-yellow"}>BUY NOW</HComp.Button>
           </Link>
           <HComp.BuyMessage>

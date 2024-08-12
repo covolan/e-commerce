@@ -8,7 +8,7 @@ export default function HeroOffice() {
 
   return (
     <HComp.Root heroBg={"hero-bg"}>
-      <Link to={"/product/15"}>
+      <Link to={"/e-commerce/product/15"}>
         <HComp.Right
           imgSrc={heroImageItem}
           bgDivClassName={"blob-div-office"}
@@ -44,7 +44,7 @@ export default function HeroOffice() {
         </HComp.Description>
 
         <HComp.BuySection>
-          <Link to={"/product/15"}>
+          <Link to={"/e-commerce/product/15"}>
             <HComp.Button color={"btn-yellow"}>BUY NOW</HComp.Button>
           </Link>
           <HComp.BuyMessage>

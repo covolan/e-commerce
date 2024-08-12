@@ -44,7 +44,7 @@ function Hero() {
         </HComp.Description>
 
         <HComp.BuySection>
-          <Link to={"/product/13"}>
+          <Link to={"/e-commerce/product/13"}>
             <HComp.Button color={"btn-blue"}>BUY NOW</HComp.Button>
           </Link>
           <HComp.BuyMessage>
@@ -57,7 +57,7 @@ function Hero() {
         </HComp.BuySection>
       </HComp.Left>
 
-      <Link to={"/product/13"}>
+      <Link to={"/e-commerce/product/13"}>
         <HComp.Right imgSrc={heroImageItem} bgDivClassName={"blob-div"} />
       </Link>
     </HComp.Root>
