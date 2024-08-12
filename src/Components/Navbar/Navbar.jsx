@@ -60,15 +60,15 @@ export default Navbar;
 const RegularMenu = () => {
   const menuOptions = [
     {
-      path: "/",
+      path: "/e-commerce/",
       optionName: "home",
     },
     {
-      path: "/gaming",
+      path: "/e-commerce/gaming",
       optionName: "gaming",
     },
     {
-      path: "/office",
+      path: "/e-commerce/office",
       optionName: "office",
     },
   ];
@@ -88,13 +88,13 @@ const RegularMenu = () => {
       </ul>
       <div className="navbar-loginAndCart">
         <NavbarMenuItem.Root>
-          <NavbarMenuItem.Link path={"/signup"}>
+          <NavbarMenuItem.Link path={"/e-commerce/signup"}>
             <NavbarMenuItem.Login />
           </NavbarMenuItem.Link>
         </NavbarMenuItem.Root>
 
         <NavbarMenuItem.Root>
-          <NavbarMenuItem.Link path={"/cart"}>
+          <NavbarMenuItem.Link path={"/e-commerce/cart"}>
             <NavbarMenuItem.Cart />
           </NavbarMenuItem.Link>
         </NavbarMenuItem.Root>
@@ -107,23 +107,23 @@ const BarMenu = ({ handleCloseMenu, handleMenuClick, menuAnchor, open }) => {
   const menuOptions = [
     {
       name: "Home",
-      path: "/",
+      path: "/e-commerce/",
     },
     {
       name: "Gaming",
-      path: "/gaming",
+      path: "/e-commerce/gaming",
     },
     {
       name: "Office",
-      path: "/office",
+      path: "/e-commerce/office",
     },
     {
       name: "Login",
-      path: "/login",
+      path: "/e-commerce/login",
     },
     {
       name: "Cart",
-      path: "/cart",
+      path: "/e-commerce/cart",
     },
   ];
 

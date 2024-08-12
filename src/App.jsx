@@ -16,20 +16,23 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path="/product" element={<Product />}>
-              <Route path=":productId" element={<Product />} />
+            <Route path="/e-commerce/product" element={<Product />}>
+              <Route
+                path="/e-commerce/product/:productId"
+                element={<Product />}
+              />
             </Route>
-            <Route path="/" element={<Home />} />
+            <Route path="/e-commerce/" element={<Home />} />
             <Route
-              path="/gaming"
+              path="/e-commerce/gaming"
               element={<ProductsCategory category="gaming" />}
             />
             <Route
-              path="/office"
+              path="/e-commerce/office"
               element={<ProductsCategory category="office" />}
             />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/signup" element={<SignUp />} />
+            <Route path="/e-commerce/cart" element={<Cart />} />
+            <Route path="/e-commerce/signup" element={<SignUp />} />
           </Routes>
           <Footer />
         </BrowserRouter>

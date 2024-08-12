@@ -8,7 +8,13 @@ import { Link } from "react-router-dom";
 const firstLinks = ["Contact", "Carrers", "Company", "FAQ", "SAC"];
 const firstLinksGoTo = ["", "", "", "", ""];
 const secondLinks = ["Home", "Gaming", "Office", "Login"];
-const secontLinksGoTo = ["/", "/gaming", "/office", "/signup", ""];
+const secontLinksGoTo = [
+  "/e-commerce/",
+  "/e-commerce/gaming",
+  "/e-commerce/office",
+  "/e-commerce/signup",
+  "",
+];
 const socialLinks = [instagramLogo, whasappLogo, twitterLogo];
 const goToTop = () => {
   window.scrollTo({

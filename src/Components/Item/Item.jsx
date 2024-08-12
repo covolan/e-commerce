@@ -16,7 +16,7 @@ function Item({ product }) {
   return (
     <div className="itemDiv">
       <Link
-        to={`/product/${product.id}`}
+        to={`/e-commerce/product/${product.id}`}
         style={{ textDecoration: "inherit", color: "inherit" }}
         onClick={goToTop}
       >
